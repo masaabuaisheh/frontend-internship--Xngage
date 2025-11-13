@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Start announcment bar style */
+.announcement-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #d7d3c780; /* 80 is the hex equivalent of 50% opacity */
+  color: #1f1f1f;
+}
+
+a.announcement-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #1f1f1f;
+}
+/* End announcment bar style */
