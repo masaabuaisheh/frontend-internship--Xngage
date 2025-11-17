@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="StyleSheets/Css/style.css" />
-    <script
+    <link rel="stylesheet" href="stylesheets/css/style.css" />
+    <script defer
       src="https://kit.fontawesome.com/e4afa21b67.js"
       crossorigin="anonymous"
     ></script>
@@ -37,19 +37,13 @@
       <!-- Nav bar -->
       <div class="header-nav-bar">
         <!-- Logo -->
-        <div class="menu-icon">
-          <i class="fa-solid fa-bars"></i>
+        <div class="menu-icon container">
+          <button popovertarget="menu"><i class="fa-solid fa-bars"></i></button>
         </div>
         <div class="xngage-logo">
           <div class="container">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 206.6 34.7">
-              <defs>
-                <style>
-                  .a {
-                    fill: #5b6770;
-                  }
-                </style>
-              </defs>
+              <defs></defs>
               <path
                 class="a"
                 d="M28.8-.1a5.08,5.08,0,0,0-3.6,1.5l-8,8,3.4,3.4h0a5.07,5.07,0,0,1,0,7.2h0l-4,4,8.5,8.5a5.09,5.09,0,0,0,7.2-7.2l-8.4-8.4,8.4-8.4a5.07,5.07,0,0,0,0-7.2A5,5,0,0,0,28.8-.1"
@@ -93,7 +87,7 @@
             </svg>
           </div>
         </div>
-        <div class="search-tab">
+        <div class="search-tab container">
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
 
@@ -110,10 +104,7 @@
               <li>
                 <a class="search-button" href="#">
                   search
-                  <i
-                    class="fa-solid fa-magnifying-glass"
-                    style="color: #003150"
-                  ></i>
+                  <i class="fa-solid fa-magnifying-glass"></i>
                 </a>
               </li>
             </ul>
@@ -121,5 +112,68 @@
         </div>
       </div>
     </header>
+    <main>
+      <section class="hero-section container-fluid">
+        <div class="hero-image">
+          <div class="hero-section-title">
+            <h1 class="container">
+              Comprehensive <br />
+              Boiler Room Solutions
+            </h1>
+          </div>
+          <div class="learn-more-btn">
+            <a href="#">learn more</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- mega menu for products -->
+    <div class="products-menu"></div>
+
+    <!-- mobile -->
+    <div popover id="menu" class="navigation-section-mobile">
+      <div class="colse-menu">
+        <button popovertarget="menu" popovertargetaction="hide">
+          <i class="fa-solid fa-x"></i>
+        </button>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li>
+            <a href="#">solutions <i class="fa-solid fa-greater-than"></i></a>
+          </li>
+          <li>
+            <a href="#">products <i class="fa-solid fa-greater-than"></i></a>
+          </li>
+          <li>
+            <a href="#">rentals <i class="fa-solid fa-greater-than"></i></a>
+          </li>
+          <li>
+            <a href="#">industries <i class="fa-solid fa-greater-than"></i></a>
+          </li>
+          <li>
+            <a href="#"
+              >education & training <i class="fa-solid fa-greater-than"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              >company info <i class="fa-solid fa-greater-than"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-top-bar-mobile">
+        <a href="#" class="find-rep">
+          <i class="fa-solid fa-user"></i>
+          Find a Rep</a
+        >
+        <a href="#" class="parts-store">
+          <i class="fa-solid fa-cart-shopping"></i>
+          Parts Store</a
+        >
+      </div>
+    </div>
   </body>
 </html>
