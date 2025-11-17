@@ -1,0 +1,10 @@
+:root {
+  --announcement-text-color: #1f1f1f;
+  --supplementary-bg-color: #d7d3c780; /* 80 is the hex equivalent of 50% opacity*/
+  --primary-color: #003150;
+  --primary-color-with-opacity: #00315040; /* 40 is the hex equivalent of 25% opacity (0.25 * 255)*/
+  --logo-bg-color: #e98300;
+  --border-bottom-color: #aa272f;
+  --white-color: #fff;
+  --supplementary-bg-color-without-opacity: #eae9e7;
+}

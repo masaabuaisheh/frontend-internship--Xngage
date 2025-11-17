@@ -1,0 +1,40 @@
+/* Header style for laptop */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    padding-inline: 32px;
+  }
+  /* announcement bar style */
+  .announcement-bar {
+    height: 50px;
+    text-align: center;
+  }
+
+  /* top bar style */
+  .secondary-list {
+    justify-content: flex-end;
+    margin: 0;
+  }
+
+  .header-nav-bar {
+    flex-wrap: wrap;
+  }
+
+  .navigation-section ul li {
+    padding-right: 20px;
+  }
+
+  .navigation-section a,
+  .search-button button {
+    font-size: 12px;
+  }
+
+  #menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #menu {
+    display: none;
+  }
+}

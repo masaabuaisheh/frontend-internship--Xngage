@@ -1,0 +1,49 @@
+/* hero section */
+.hero {
+  height: 500px;
+}
+
+.hero-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+    url(/assets/images/boiler-room-interior.png);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white-color, #fff);
+  font-size: clamp(12px, 2vw, 24px);
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.learn-more-btn a {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--white-color, #fff);
+  font-size: clamp(12px, 3vw, 16px);
+  letter-spacing: 1.5px;
+  border: 1px solid var(--white-color, #fff);
+  padding: 12px 38px;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
