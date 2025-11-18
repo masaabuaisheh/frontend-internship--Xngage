@@ -33,7 +33,7 @@
   text-decoration: none;
   text-transform: uppercase;
   color: var(--white-color, #fff);
-  font-size: clamp(12px, 3vw, 15px);
+  font-size: clamp(12px, 3vw, 16px);
   letter-spacing: 1px;
   border: 1px solid var(--white-color, #fff);
   padding: 12px 45px;
