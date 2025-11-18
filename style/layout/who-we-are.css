@@ -1,0 +1,65 @@
+.who-we-are {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+  background-image: url(/assets/image/two-hands--removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: right;
+  background-clip: content-box;
+}
+
+.text {
+  white-space: nowrap;
+  padding-right: 20px;
+  font-family: "Helvetica Neue Medium", Arial, sans-serif;
+}
+
+.vertical-line {
+  width: 50px;
+  height: 110px;
+  border-left: 3px solid var(--supplementary-bg-color-without-opacity);
+}
+
+.info {
+  width: 800px;
+  padding-right: 20px;
+}
+
+.info p {
+  letter-spacing: 1px;
+  font-family: "Helvetica Neue Regular", Arial, sans-serif;
+}
+
+.adv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--red-color-with-opacity);
+  width: 300px;
+  height: 200px;
+  padding: 20px 17px;
+  color: var(--white-color);
+  letter-spacing: 1px;
+  position: relative;
+  top: -20%;
+  line-height: 20px;
+}
+
+.adv p {
+  padding-bottom: 20px;
+  font-family: "Helvetica Neue Regular", Arial, sans-serif;
+}
+
+.adv a {
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 12px;
+  font-family: "Helvetica Neue Regular", Arial, sans-serif;
+}
+
+.adv i {
+  color: var(--white-color);
+}

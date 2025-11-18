@@ -44,10 +44,9 @@
   }
 
   .learn-more-btn a {
-    top: 65%;
-    letter-spacing: 0;
+    letter-spacing: 1.5px;
     text-align: center;
-    padding: 12px 8px;
+    padding: 12px 45px;
   }
 
   .navigation-section {
@@ -92,7 +91,12 @@
   }
 
   .colse-menu i {
-    font-size: 15px;
+    font-size: 20px;
+    color: var(--primary-color, #003150);
+  }
+
+  .search-button i {
+    font-size: 20px;
     color: var(--primary-color, #003150);
   }
 
@@ -105,5 +109,26 @@
     text-transform: capitalize !important;
     font-family: "Helvetica Neue Medium", Arial, Sans-Serif;
     font-weight: normal;
+  }
+
+  .who-we-are {
+    background-image: none;
+  }
+
+  .info {
+    height: auto;
+    padding-top: 30px;
+  }
+
+  .adv {
+    height: auto;
+  }
+
+  .adv p {
+    font-size: 12px;
+  }
+
+  .adv a {
+    font-size: 11px;
   }
 }

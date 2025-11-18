@@ -1,0 +1,12 @@
+.room-intelligence {
+  display: flex;
+  justify-content: space-between;
+}
+
+.intel-section {
+  width: 400px;
+  height: 280px;
+  background-color: aqua;
+  padding: 40px;
+}
+

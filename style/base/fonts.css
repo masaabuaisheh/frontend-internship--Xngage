@@ -9,3 +9,9 @@
   src: url("../../assets/fonts/HelveticaNeueMedium.otf") format("opentype");
   font-display: wrap;
 }
+
+@font-face {
+  font-family: "Helvetica Neue Bold";
+  src: url("../../assets/fonts/HelveticaNeueBold.otf") format("opentype");
+  font-display: wrap;
+}
