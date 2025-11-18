@@ -19,6 +19,7 @@
   padding: 20px 40px;
   z-index: 999;
   word-break: keep-all;
+  pointer-events: none;
 }
 
 .prometha {

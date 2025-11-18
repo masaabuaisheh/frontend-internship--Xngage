@@ -97,7 +97,7 @@
     width: 70%;
     height: 100%;
     background: white;
-    z-index: 999;
+    z-index: 2000;
   }
 
   .navigation-section ul {
@@ -190,5 +190,30 @@
     width: 100%;
     text-align: center;
     height: auto;
+  }
+}
+
+/* Override desktop overlay and stretch video normally */
+@media screen and (min-width: 1025px) and (max-width: 2440px) {
+  .room-intelligence {
+    padding-top: 20px;
+  }
+
+  .video-section {
+    width: 100% !important; /* stretch the video */
+  }
+
+  .video-section video {
+    width: 75% !important;
+    height: auto !important;
+  }
+
+  .intel-section {
+    position: absolute !important;
+    width: 410px !important;
+    height: 280px !important;
+    background-color: var(--supplementary-bg-color-without-opacity);
+    padding: 20px !important;
+    margin-top: 20px;
   }
 }

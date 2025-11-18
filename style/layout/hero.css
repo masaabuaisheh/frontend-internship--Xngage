@@ -36,7 +36,8 @@
   font-size: clamp(12px, 3vw, 16px);
   letter-spacing: 1px;
   border: 1px solid var(--white-color, #fff);
-  padding: 12px 45px;
+  padding: 13px 50px;
+  letter-spacing: 2px;
   font-family: "Helvetica Neue Regular", Arial, Sans-Serif;
 }
 

@@ -38,14 +38,14 @@
   justify-content: center;
   align-items: flex-start;
   background-color: var(--red-color-with-opacity);
-  width: 300px;
-  height: 200px;
+  width: 250px;
+  height: 199px;
   padding: 20px 17px;
   color: var(--white-color);
   letter-spacing: 1px;
   position: relative;
   top: -20%;
-  line-height: 20px;
+  line-height: 23px;
 }
 
 .adv p {

@@ -36,9 +36,8 @@
   }
 
   .menu-button {
+    font-size: 20px;
     display: block;
-    background-color: #aa272f;
-    z-index: 1000;
   }
 
   .search-button {
@@ -112,7 +111,7 @@
     font-family: "Helvetica Neue Medium", Arial, Sans-Serif;
     font-weight: normal;
   }
-  
+
   .who-we-are {
     display: flex;
     flex-direction: column;
