@@ -1,12 +1,42 @@
 .room-intelligence {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  position: relative;
+}
+
+.video-section {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .intel-section {
-  width: 400px;
+  position: absolute;
+  width: 410px;
   height: 280px;
-  background-color: aqua;
-  padding: 40px;
+  background-color: var(--supplementary-bg-color-without-opacity);
+  padding: 20px 40px;
+  z-index: 999;
+  word-break: keep-all;
 }
 
+.prometha {
+  font-family: "Helvetica Neue Medium", sans-serif;
+  color: var(--primary-color, #003150);
+  padding: 22px 0;
+}
+
+.intel-title {
+  width: auto;
+  font-family: "Helvetica Neue Bold", sans-serif;
+  font-size: 14px;
+}
+
+.intel-content {
+  padding-top: 16px;
+  font-family: "Helvetica Neue Regular", sans-serif;
+  line-height: 20px;
+  letter-spacing: 1;
+  font-size: 13px;
+}

@@ -37,7 +37,8 @@
 
   .menu-button {
     display: block;
-    font-size: 20px;
+    background-color: #aa272f;
+    z-index: 1000;
   }
 
   .search-button {
@@ -141,6 +142,29 @@
 
   .adv {
     width: 100%;
+    height: auto;
+  }
+
+  .room-intelligence {
+    padding-top: 30px;
+    flex-direction: column;
+  }
+
+  .intel-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  .intel-title {
+    font-size: 12px;
+  }
+
+  .video-section video {
+    width: 100%;
+    text-align: center;
     height: auto;
   }
 }

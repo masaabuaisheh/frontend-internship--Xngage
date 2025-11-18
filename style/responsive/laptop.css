@@ -43,8 +43,6 @@
 } */
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
-  /* 1135 */
-
   .container {
     padding-inline: 32px;
   }
@@ -89,7 +87,7 @@
   .learn-more-btn a {
     letter-spacing: 1.5px;
     text-align: center;
-    padding: 12px 28px;
+    padding: 12px 38px;
   }
 
   .navigation-section {
@@ -166,6 +164,31 @@
   }
 
   .adv {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .room-intelligence {
+    padding-top: 30px;
+    flex-direction: column;
+  }
+
+  .intel-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  .intel-title {
+    font-size: 12px;
+  }
+
+  .video-section video {
+    width: 100%;
+    text-align: center;
     height: auto;
   }
 }
