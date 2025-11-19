@@ -196,8 +196,9 @@
   }
 
   .recent-news-header a {
-    text-align: center;
+    text-align: left;
     padding-top: 10px;
+    font-size: 12px;
   }
 
   .news-cards {

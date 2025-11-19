@@ -196,6 +196,12 @@
     padding-bottom: 20px;
   }
 
+  .recent-news-header a {
+    text-align: left;
+    padding-top: 10px;
+    font-size: 12px;
+  }
+  
   .news-card-image img {
     width: 100%;
   }
