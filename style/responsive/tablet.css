@@ -174,11 +174,12 @@
   .sol-item-content,
   .sol-item-content-reverse {
     padding: 0;
-    text-align: center;
+    text-align: left;
   }
 
-  .horizantal-line {
-    margin: 0 auto;
+  .cta {
+    padding-top: 10px;
+    font-size: 12px;
   }
 
   .news-cards {
@@ -206,6 +207,7 @@
   .news-link {
     padding: 10px 0 20px 0;
   }
+
   .prev,
   .next {
     top: 100%;

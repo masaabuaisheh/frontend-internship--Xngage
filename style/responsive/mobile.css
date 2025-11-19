@@ -182,7 +182,7 @@
   .sol-item-content,
   .sol-item-content-reverse {
     padding: 0;
-    text-align: center;
+    text-align: left;
   }
 
   .sol-item-content h3,
@@ -190,8 +190,9 @@
     font-size: 28px;
   }
 
-  .horizantal-line {
-    margin: 0 auto;
+  .cta {
+    padding-top: 10px;
+    font-size: 12px;
   }
 
   .recent-news-header a {
