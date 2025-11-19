@@ -13,6 +13,10 @@
     text-align: center;
   }
 
+  .br-desktop {
+    display: inline;
+  }
+
   /* top bar style */
   .secondary-list {
     display: none;
@@ -46,7 +50,7 @@
   .learn-more-btn a {
     letter-spacing: 1.5px;
     text-align: center;
-    padding: 12px 45px;
+    padding: 12px 55px;
   }
 
   .navigation-section {
@@ -112,25 +116,36 @@
   }
 
   .who-we-are {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-image: none;
+    padding-top: 20px;
+    height: auto;
+  }
+
+  .text {
+    padding-right: 0;
+    padding-bottom: 10px;
+  }
+
+  .vertical-line {
+    height: 0;
+    border-left: 0;
+    width: 70%;
+    text-align: center;
+    border-bottom: 2px solid var(--supplementary-bg-color-without-opacity);
   }
 
   .info {
-    height: auto;
-    padding-top: 30px;
+    width: 100%;
+    padding: 20px 0;
+    display: inline-block;
   }
 
   .adv {
-    line-height: 15px;
+    width: 100%;
     height: auto;
-  }
-
-  .adv p {
-    font-size: 12px;
-  }
-
-  .adv a {
-    font-size: 11px;
   }
 
   .room-intelligence {
@@ -201,7 +216,7 @@
     padding-top: 10px;
     font-size: 12px;
   }
-  
+
   .news-card-image img {
     width: 100%;
   }

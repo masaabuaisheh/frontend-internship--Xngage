@@ -38,6 +38,11 @@
     padding-left: 0;
   }
 
+  .learn-more-btn a {
+    font-size: 12px;
+    padding: 12px 55px;
+  }
+
   .navigation-section {
     position: fixed;
     left: -100%;
@@ -72,8 +77,18 @@
     display: block !important;
   }
 
+  .br-desktop {
+    display: inline;
+  }
+
+  .info {
+    padding-top: 20px;
+  }
+
   .adv {
+    width: 300px;
     height: auto;
+    padding: 20px 17px;
   }
 
   .sol-item-image img {
@@ -173,6 +188,18 @@
     padding-inline: 32px;
   }
 
+  .secondary-list .find-rep {
+    padding-right: 36px;
+  }
+
+  .learn-more-btn a {
+    font-size: 12px;
+  }
+
+  .br-desktop {
+    display: block;
+  }
+
   .room-intelligence {
     padding-top: 20px;
   }
@@ -182,16 +209,15 @@
   }
 
   .video-section video {
-    width: 75% !important;
+    width: 66% !important;
     height: auto !important;
   }
 
   .intel-section {
     position: absolute !important;
-    width: 410px !important;
-    height: 280px !important;
+    width: 500px !important;
+    height: 340px !important;
     background-color: var(--supplementary-bg-color-without-opacity);
-    padding: 20px !important;
     margin-top: 20px;
   }
 
@@ -212,5 +238,28 @@
 
   .next {
     right: 0;
+  }
+}
+
+@media screen and (min-width: 2441px) and (max-width: 4000px) {
+  .intel-section {
+    position: absolute !important;
+    width: 500px !important;
+    height: 340px !important;
+    background-color: var(--supplementary-bg-color-without-opacity);
+    margin-top: 20px;
+  }
+
+  .prev,
+  .next {
+    top: 100%;
+  }
+
+  .prev {
+    left: 40%;
+  }
+
+  .next {
+    right: 40%;
   }
 }

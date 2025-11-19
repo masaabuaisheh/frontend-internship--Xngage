@@ -50,7 +50,9 @@
   padding-top: 20px;
   font-family: "Helvetica Neue Regular", Arial, sans-serif;
   color: var(--text-color, #1f1f1f);
-  letter-spacing: 1px;
+  letter-spacing: 0.57px;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .cta {
@@ -58,7 +60,7 @@
   text-decoration: none;
   color: var(--primary-color, #003150);
   font-family: "Helvetica Neue Medium", Arial, sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   letter-spacing: 0.5px;
 }
 

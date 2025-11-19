@@ -11,12 +11,13 @@
 .announcement-bar p {
   font-family: "Helvetica Neue Regular", sans-serif;
   font-size: 15px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.2px;
 }
 
 a.announcement-link {
   text-decoration: none;
   font-weight: bold;
+  letter-spacing: 1px;
   color: var(--announcement-text-color, #1f1f1f);
 }
 /* End announcement bar style */
@@ -44,11 +45,11 @@ a.announcement-link {
   text-decoration: none;
   color: var(--primary-color, #003150);
   font-family: "Helvetica Neue Medium", sans-serif;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .secondary-list .find-rep {
-  padding-right: 40px;
+  padding-right: 28px;
 }
 
 .secondary-list a > i {
@@ -104,7 +105,7 @@ a.announcement-link {
   color: var(--primary-color, #003150);
   font-family: "Helvetica Neue Medium", Arial, Sans-Serif;
   font-size: 16px;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   white-space: nowrap;
 }
 
@@ -134,7 +135,7 @@ a.announcement-link {
   color: var(--primary-color, #003150);
   font-family: "Helvetica Neue Medium", Arial, Sans-Serif;
   font-size: 16px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   padding-right: 2px;
 }
 
