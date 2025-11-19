@@ -8,4 +8,6 @@
   --white-color: #fff;
   --supplementary-bg-color-without-opacity: #eae9e7;
   --red-color-with-opacity: #aa272fe6; /* 0.9 opacity */
+  --text-color: #1f1f1f;
+  --supplementary-text-color: #afafaf;
 }

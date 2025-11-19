@@ -121,6 +121,7 @@
   }
 
   .adv {
+    line-height: 15px;
     height: auto;
   }
 
@@ -153,5 +154,30 @@
     width: 100%;
     text-align: center;
     height: auto;
+  }
+  .solution-item,
+  .solution-item-reverse {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .sol-item-content h3,
+  .sol-item-content-reverse h3 {
+    font-size: 30px;
+  }
+
+  .sol-item-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .sol-item-content,
+  .sol-item-content-reverse {
+    padding: 0;
+    text-align: center;
+  }
+
+  .horizantal-line {
+    margin: 0 auto;
   }
 }

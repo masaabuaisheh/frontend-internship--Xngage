@@ -1,0 +1,81 @@
+.sol-section {
+  padding-top: 60px;
+}
+
+.sol-title {
+  text-align: center;
+  font-family: "Helvetica Neue Bold", Arial, sans-serif;
+  color: var(--text-color, #1f1f1f);
+}
+
+.solution-item {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sol-item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 40px;
+}
+
+.sec-label {
+  color: var(--supplementary-text-color, #afafaf);
+  font-size: 16px;
+  font-family: "Helvetica Neue Medium", Arial, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.horizantal-line {
+  width: 6%;
+  border-bottom: 2px solid #afafaf;
+  padding-bottom: 10px;
+}
+
+.sol-item-content h3,
+.sol-item-content-reverse h3 {
+  padding-top: 20px;
+  font-family: "Helvetica Neue Medium", Arial, sans-serif;
+  color: var(--text-color, #1f1f1f);
+  font-size: 35px;
+  font-weight: normal;
+}
+
+.sol-item-content p,
+.sol-item-content-reverse p {
+  padding-top: 20px;
+  font-family: "Helvetica Neue Regular", Arial, sans-serif;
+  color: var(--text-color, #1f1f1f);
+  letter-spacing: 1px;
+}
+
+.cta {
+  padding-top: 30px;
+  text-decoration: none;
+  color: var(--primary-color, #003150);
+  font-family: "Helvetica Neue Medium", Arial, sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.sol-item-image img {
+  width: 750px;
+  height: 350px;
+}
+
+.solution-item-reverse {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.sol-item-content-reverse {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+}
