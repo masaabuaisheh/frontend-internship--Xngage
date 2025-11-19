@@ -1,0 +1,68 @@
+.products-bg {
+  height: 250px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+    url(../../assets/image/products-bg-gray.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center 80%;
+}
+
+.product-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white-color, #fff);
+  font-size: clamp(20px, 2vw, 32px);
+  letter-spacing: 1.5px;
+  text-align: center;
+  font-family: "Helvetica Neue Bold", Arial, Sans-Serif;
+}
+
+.featured-categories {
+  padding-top: 60px;
+}
+
+.featured-categories-title {
+  text-align: center;
+  font-family: "Helvetica Neue Bold", Arial, sans-serif;
+  color: var(--text-color, #1f1f1f);
+  font-size: 24px;
+}
+
+.categories-items {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+  padding-top: 40px;
+  justify-items: center;
+  align-items: center;
+}
+
+.category-item {
+  text-align: center;
+}
+
+.category-item-img {
+  width: 200px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-item-img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.category-item-link a {
+  text-decoration: none;
+  color: var(--primary-color, #003150);
+  font-family: "Helvetica Neue Medium", Arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}

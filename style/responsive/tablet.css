@@ -241,4 +241,22 @@
   .next {
     right: 42%;
   }
+
+  .product-sec {
+    padding-top: 60px;
+  }
+
+  .featured-categories-title {
+    font-size: 20px;
+  }
+
+  .category-item-img {
+    height: 200px;
+  }
+
+  .categories-items {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding-top: 10px;
+  }
 }

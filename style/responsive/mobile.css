@@ -243,4 +243,31 @@
   .next {
     right: 40%;
   }
+
+  .featured-categories {
+    padding-top: 30px;
+  }
+
+  .product-sec {
+    padding-top: 60px;
+  }
+
+  .featured-categories-title {
+    font-size: 18px;
+  }
+
+  .category-item-img {
+    width: 120px;
+    height: 140px;
+  }
+
+  .categories-items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding-top: 10px;
+  }
+
+  .category-item-link a {
+    font-size: 12px;
+  }
 }
