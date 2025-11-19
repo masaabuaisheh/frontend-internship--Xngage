@@ -180,4 +180,42 @@
   .horizantal-line {
     margin: 0 auto;
   }
+
+  .news-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .new-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .recent-news-header {
+    padding-bottom: 20px;
+  }
+
+  .news-card-image img {
+    width: 100%;
+  }
+
+  .news-card-title {
+    padding: 10px 0 10px 0;
+  }
+
+  .news-link {
+    padding: 10px 0 20px 0;
+  }
+  .prev,
+  .next {
+    top: 100%;
+  }
+
+  .prev {
+    left: 42%;
+  }
+
+  .next {
+    right: 42%;
+  }
 }

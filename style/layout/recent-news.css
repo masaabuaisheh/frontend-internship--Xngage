@@ -1,0 +1,110 @@
+.recent-news {
+  padding-top: 60px;
+  position: relative;
+}
+
+.recent-news-header {
+  padding-bottom: 20px;
+}
+
+.recent-news-header h2 {
+  text-align: center;
+  font-family: "Helvetica Neue Bold", Arial, sans-serif;
+  color: var(--text-color, #1f1f1f);
+  font-size: 28px;
+}
+
+.recent-news-header a {
+  text-decoration: none;
+  color: #6d6d6d;
+  font-family: "Helvetica Neue Medium", Arial, sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  display: block;
+  text-align: right;
+}
+
+.news-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.new-card {
+  width: 410px;
+  height: 500px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card-image img {
+  width: 410px;
+  height: 250px;
+}
+
+.news-card-title {
+  padding: 20px 0 10px 0;
+  font-family: "Helvetica Neue Regular", Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+.news-card-desc {
+  font-family: "Helvetica Neue Regular", Arial, sans-serif;
+  --max-lines: 3;
+  display: -webkit-box; /* layout for text-clamping */
+  overflow: hidden;
+  -webkit-box-orient: vertical; /* box layout from top to bottom */
+  -webkit-line-clamp: var(
+    --max-lines
+  ); /* show max-lines then cut the rest (add ...)*/
+  line-clamp: 3;
+  line-height: 20px;
+}
+
+.news-link {
+  padding-top: 20px;
+}
+
+.news-link a {
+  text-decoration: none;
+  color: var(--primary-color, #003150);
+  font-family: "Helvetica Neue Medium", Arial, sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  /* top: 40%; */
+  width: auto;
+  border-radius: 50%;
+  user-select: none;
+  z-index: 3000;
+  color: var(--white-color);
+  font-size: clamp(12px, 2vw, 22px);
+  padding: clamp(6px, 1.2vw, 16px);
+}
+
+.prev {
+  background-color: #00315099;
+  left: 0;
+}
+
+.next {
+  background-color: var(--primary-color, #003150);
+
+  right: 0;
+}
+
+.next:hover {
+  background-color: #00315080;
+}
+
+.prev:hover {
+  background-color: var(--primary-color, #003150);
+}
