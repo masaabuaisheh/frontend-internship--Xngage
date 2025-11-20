@@ -53,7 +53,7 @@
     position: fixed;
     left: -100%;
     top: 0;
-    width: 38%;
+    width: 80%;
     height: 100%;
     background: white;
     z-index: 999;
@@ -109,22 +109,5 @@
     text-transform: capitalize !important;
     font-family: "Helvetica Neue Medium", Arial, Sans-Serif;
     font-weight: normal;
-  }
-
-  .news-card-image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-
-  .new-card {
-    width: 100% !important;
-    height: auto !important;
-  }
-
-  .news-cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 24px;
   }
 }
