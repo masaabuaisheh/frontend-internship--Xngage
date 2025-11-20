@@ -35,6 +35,7 @@
   height: 500px;
   box-sizing: border-box;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 
