@@ -86,7 +86,7 @@
   user-select: none;
   z-index: 3000;
   color: var(--white-color);
-  font-size: clamp(12px, 2vw, 22px);
+  font-size: clamp(12px, 2vw, 15px);
   padding: clamp(6px, 1.2vw, 16px);
 }
 

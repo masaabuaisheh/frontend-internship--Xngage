@@ -1,84 +1,15 @@
 /* Tablet / Small Laptop — 769px to 1200px */
 @media screen and (min-width: 769px) and (max-width: 1200px) {
-  .container {
-    padding-inline: 32px;
+  .br-desktop {
+    display: inline;
   }
 
-  .announcement-bar {
-    height: 50px;
-    text-align: center;
-  }
-  .announcement-bar p {
-    line-height: 25px;
-  }
-
-  .secondary-list,
-  .search-button button {
-    display: none;
-  }
-
-  .content .container {
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-  }
-
-  .xngage-logo {
-    padding-right: 0;
-    width: auto;
-    height: auto;
-  }
-
-  .menu-button {
-    display: block;
+  .hero i {
     font-size: 20px;
   }
 
-  .search-button {
-    padding-left: 0;
-  }
-
-  .learn-more-btn a {
-    font-size: 12px;
-    padding: 12px 55px;
-  }
-
-  .navigation-section {
-    position: fixed;
-    left: -100%;
-    top: 0;
-    width: 70%;
-    height: 100%;
-    background: white;
-    z-index: 2000;
-  }
-
-  .navigation-section ul {
-    flex-direction: column;
-    line-height: 50px;
-  }
-
-  .navigation-section a {
-    border-bottom: 3px solid var(--supplementary-bg-color);
-    text-transform: uppercase;
-    font-size: 12px;
-  }
-
-  #menu-toggle:checked ~ .navigation-section {
-    left: 0;
-  }
-
-  .colse-menu {
-    height: 50px;
-    border-bottom: 2px solid var(--border-bottom-color);
-  }
-
-  .secondary-list-for-mobile {
-    display: block !important;
-  }
-
-  .br-desktop {
-    display: inline;
+  .search-button i {
+    font-size: 20px;
   }
 
   .info {
@@ -201,10 +132,6 @@
     padding-inline: 32px;
   }
 
-  .secondary-list .find-rep {
-    padding-right: 36px;
-  }
-
   .learn-more-btn a {
     font-size: 12px;
   }
@@ -240,16 +167,32 @@
     padding: 20px 17px;
   }
 
+  .new-card {
+    width: 350px;
+  }
+
+  .news-card-image img {
+    width: 350px;
+  }
+
   .prev,
   .next {
     top: 40%;
   }
 
   .prev {
-    left: 0;
+    left: 1%;
   }
 
   .next {
+    right: 1%;
+  }
+
+  .pro-prev {
+    left: 0;
+  }
+
+  .pro-next {
     right: 0;
   }
 }

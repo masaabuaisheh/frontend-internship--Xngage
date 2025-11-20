@@ -3,14 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/style.css" />
-    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
-
-    <!-- <script
-      defer
-      src="https://kit.fontawesome.com/e4afa21b67.js"
-      crossorigin="anonymous"
-    ></script> -->
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
     <title>MyStore Demo</title>
   </head>
   <body>
@@ -28,7 +22,7 @@
     <!-- Header section -->
     <header>
       <div class="secondary-list">
-        <div class="container">
+        <div role="navigation" class="container">
           <ul>
             <li>
               <a href="" class="find-rep">
@@ -55,7 +49,7 @@
           </label>
 
           <!-- Logo -->
-          <div class="xngage-logo">
+          <div class="logo">
             <a href="#home">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 206.6 34.7">
                 <defs></defs>
@@ -104,7 +98,7 @@
           </div>
 
           <!-- Main menu -->
-          <nav class="navigation-section">
+          <nav class="main-menu">
             <div class="colse-menu">
               <label for="menu-toggle" class="close-button">
                 <i class="fa-solid fa-x"></i>
@@ -451,6 +445,103 @@
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <!-- Recently viewed Products -->
+      <section>
+        <div class="container recently-viewed">
+          <h2 class="recently-viewed-title">Recently Viewed Products</h2>
+          <div class="viewed-products">
+            <!-- product 1 -->
+            <div class="viewed-product">
+              <div class="product-img">
+                <img src="./assets/image/boiler.jpg" alt="Boiler image" />
+              </div>
+              <div class="product-content">
+                <div class="product-name">
+                  <h3>CBEX Dryback Elite</h3>
+                </div>
+                <div class="cp-part">
+                  <h4>CB Part #:</h4>
+                  <p>4268902</p>
+                </div>
+                <div class="view-details-btn">
+                  <button type="button">View Details</button>
+                </div>
+              </div>
+              <div class="product-badge">
+                <p>Near-Perfect Combustion</p>
+              </div>
+            </div>
+            <!-- product 2 -->
+            <div class="viewed-product">
+              <div class="product-img">
+                <img src="./assets/image/cbex.png" alt="CBEX Elite " />
+              </div>
+              <div class="product-content">
+                <div class="product-name">
+                  <h3>CBEX Elite (1,300-2,200 HP)</h3>
+                </div>
+                <div class="cp-part">
+                  <h4>CB Part #:</h4>
+                  <p>42613431</p>
+                </div>
+                <div class="view-details-btn">
+                  <button type="button">View Details</button>
+                </div>
+              </div>
+              <div class="product-badge">
+                <p>Large Capacity</p>
+              </div>
+            </div>
+            <!-- product 3 -->
+            <div class="viewed-product">
+              <div class="product-img">
+                <img src="./assets/image/cfc.jpeg" alt="ClearFire®-CE" />
+              </div>
+              <div class="product-content">
+                <div class="product-name">
+                  <h3>ClearFire®-CE</h3>
+                </div>
+                <div class="cp-part">
+                  <h4>CB Part #:</h4>
+                  <p>12343692</p>
+                </div>
+                <div class="view-details-btn">
+                  <button type="button">View Details</button>
+                </div>
+              </div>
+              <div class="product-badge">
+                <p>Fully Condensing</p>
+              </div>
+            </div>
+            <!-- product 4 -->
+            <div class="viewed-product">
+              <div class="product-img">
+                <img
+                  src="./assets/image/ClearFire-LC.jpg"
+                  alt="ClearFire®-LC"
+                />
+              </div>
+              <div class="product-content">
+                <div class="product-name">
+                  <h3>ClearFire®-LC</h3>
+                </div>
+                <div class="cp-part">
+                  <h4>CB Part #:</h4>
+                  <p>4268902</p>
+                </div>
+                <div class="view-details-btn">
+                  <button type="button">View Details</button>
+                </div>
+              </div>
+              <div class="product-badge">
+                <p>Large Capacity</p>
+              </div>
+            </div>
+            <a class="pro-prev"><i class="fa-solid fa-arrow-left"></i></a>
+            <a class="pro-next"><i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
       </section>

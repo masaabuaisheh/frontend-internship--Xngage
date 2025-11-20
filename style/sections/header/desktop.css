@@ -1,0 +1,144 @@
+/* Tablet / Small Laptop — 769px to 1200px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .announcement-bar {
+    padding: 20px 0;
+    text-align: center;
+  }
+  .announcement-bar p {
+    line-height: 25px;
+  }
+
+  .secondary-list,
+  .search-button button {
+    display: none;
+  }
+
+  .content > div {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+  .logo {
+    padding-right: 0;
+    width: 200px;
+  }
+
+  .menu-button {
+    display: block;
+    font-size: 20px;
+  }
+
+  .search-button {
+    padding-left: 0;
+  }
+
+  .learn-more-btn a {
+    font-size: 12px;
+    padding: 12px 55px;
+  }
+
+  .main-menu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 70%;
+    height: 100%;
+    background: white;
+    z-index: 2000;
+  }
+
+  .main-menu ul {
+    flex-direction: column;
+    line-height: 50px;
+  }
+
+  .main-menu a {
+    position: relative;
+    display: block;
+    border-bottom: 3px solid var(--supplementary-bg-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--primary-color, #003150);
+    font-family: "Helvetica Neue Medium", Arial, Sans-Serif;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    padding-inline: 10px;
+  }
+
+  #menu-toggle:checked ~ .main-menu {
+    left: 0;
+  }
+
+  .colse-menu {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-bottom: 2px solid var(--border-bottom-color, #aa272f);
+    padding-inline: 10px;
+  }
+
+  .colse-menu {
+    height: 50px;
+    border-bottom: 2px solid var(--border-bottom-color);
+  }
+
+  .secondary-list-for-mobile {
+    display: block !important;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .menu-button {
+    display: none;
+    color: var(--primary-color, #003150);
+  }
+
+  .main-menu {
+    flex: 1;
+  }
+
+  .main-menu a {
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    white-space: nowrap;
+  }
+
+  .search-button {
+    display: flex;
+    padding-left: 40px;
+  }
+
+  .search-button button {
+    display: none;
+  }
+
+  .search-button i {
+    color: var(--primary-color, #003150);
+  }
+}
+
+/* Large Screens — 1201px to 2440px */
+@media screen and (min-width: 1201px) and (max-width: 2440px) {
+  .secondary-list .find-rep {
+    padding-right: 36px;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .main-menu {
+    flex: 1;
+  }
+
+  .main-menu a {
+    padding-right: 10px;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+  }
+
+  .search-button button {
+    font-size: 15px;
+  }
+}
