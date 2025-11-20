@@ -207,6 +207,7 @@
   }
 
   .new-card {
+    padding-bottom: 20px;
     width: 100% !important;
     height: auto !important;
   }
