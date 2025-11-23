@@ -16,11 +16,12 @@
   justify-content: center;
   gap: 20px;
   position: relative;
+  height: auto;
 }
 
 .viewed-product {
   width: 250px;
-  height: 450px;
+  /* height: 450px; */
   box-sizing: content-box;
   display: flex;
   flex-direction: column;
@@ -38,7 +39,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 180px;
+  min-height: 180px;
+  height: auto;
 }
 
 .product-name {
@@ -74,15 +76,20 @@
 }
 
 .product-badge {
-  width: 18%;
+  width: fit-content;
   position: absolute;
   margin-top: 8px;
   font-size: 12px;
   font-family: "Helvetica Neue Medium", Arial, sans-serif;
   color: var(--text-color, #1f1f1f);
   background-color: #d3dee4;
-  padding: 6px 10px;
-  clip-path: polygon(0 0, 100% 0, 198px 100%, 0 100%);
+  padding: 6px 12px;
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+}
+
+.product-badge p {
+  width: 170px;
+  /* padding-right: 30px; */
 }
 
 .pro-prev,
@@ -95,8 +102,8 @@
   user-select: none;
   z-index: 3000;
   color: var(--white-color);
-  font-size: clamp(12px, 2vw, 15px);
-  padding: clamp(6px, 1.2vw, 16px);
+  font-size: clamp(15px, 2vw, 15px);
+  padding: clamp(16px, 1.2vw, 16px);
 }
 
 .pro-prev {
@@ -128,16 +135,12 @@
   }
 
   .viewed-product {
-    height: 350px;
-  }
-
-  .product-badge {
-    width: 180px;
+    height: auto;
   }
 
   .product-content {
     padding: 0 20px 20px 20px;
-    height: 140px;
+    /* height: 140px; */
   }
 
   .product-img img {
@@ -150,11 +153,11 @@
   }
 
   .pro-prev {
-    left: 35%;
+    left: 22%;
   }
 
   .pro-next {
-    right: 35%;
+    right: 22%;
   }
 }
 
@@ -166,10 +169,6 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 10px;
-  }
-
-  .product-badge {
-    width: 220px;
   }
 
   .pro-prev,
@@ -195,23 +194,6 @@
     align-items: center;
     padding-bottom: 10px;
   }
-
-  .product-badge {
-    width: 220px;
-  }
-
-  .pro-prev,
-  .pro-next {
-    top: 100%;
-  }
-
-  .pro-prev {
-    left: 40%;
-  }
-
-  .pro-next {
-    right: 40%;
-  }
 }
 
 @media screen and (min-width: 1136px) and (max-width: 1200px) {
@@ -222,14 +204,14 @@
   .pro-next {
     right: 0;
   }
-
-  .product-badge {
-    width: 220px;
-  }
 }
 
 @media screen and (min-width: 1201px) and (max-width: 2440px) {
-  .product-badge {
-    width: 220px;
+  .pro-prev {
+    left: 0;
+  }
+
+  .pro-next {
+    right: 0;
   }
 }

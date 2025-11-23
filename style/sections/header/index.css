@@ -103,7 +103,7 @@ a.announcement-link {
   font-weight: bold;
   color: var(--primary-color, #003150);
   font-family: "Helvetica Neue Medium", Arial, Sans-Serif;
-  font-size: clamp(12px, 2vw, 16px);
+  font-size: clamp(12px, 1.2vw, 16px);
   letter-spacing: 1.5px;
   white-space: nowrap;
 }

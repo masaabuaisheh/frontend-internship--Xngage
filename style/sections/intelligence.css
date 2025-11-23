@@ -14,7 +14,7 @@
 .intel-section {
   position: absolute;
   width: 410px;
-  height: 280px;
+  /* height: 280px; */
   background-color: var(--supplementary-bg-color-without-opacity);
   padding: 40px 60px;
   z-index: 999;
@@ -40,4 +40,164 @@
   line-height: 20px;
   letter-spacing: 1.5px;
   font-size: 15px;
+}
+
+@media screen and (max-width: 576px) {
+  /* Header style for mobile */
+  .container {
+    padding-inline: 24px;
+  }
+
+  .room-intelligence {
+    padding-top: 20px;
+    flex-direction: column;
+  }
+
+  .intel-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .intel-title {
+    font-size: 12px;
+  }
+
+  .video-section video {
+    width: 100%;
+    text-align: center;
+    height: auto;
+    padding-bottom: 20px;
+  }
+}
+
+/* Header style for tablet */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .container {
+    padding-inline: 24px;
+  }
+
+  .room-intelligence {
+    padding-top: 20px;
+    flex-direction: column;
+  }
+
+  .intel-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .intel-title {
+    font-size: 12px;
+  }
+
+  .video-section video {
+    width: 100%;
+    text-align: center;
+    height: auto;
+    padding-bottom: 20px;
+  }
+}
+
+/* Tablet / Small Laptop — 769px to 1200px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    padding-inline: 24px;
+  }
+
+  .room-intelligence {
+    padding-top: 20px;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .intel-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .intel-title {
+    font-size: 12px;
+  }
+
+  .video-section video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Large Screens — 1201px to 2440px */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .container {
+    padding-inline: 32px;
+  }
+
+  .room-intelligence {
+    height: auto;
+    gap: 10px;
+  }
+
+  .video-section {
+    flex: 1;
+  }
+
+  .intel-section {
+    position: relative;
+    min-height: 340px;
+    height: auto;
+    flex: 1;
+  }
+
+  /* .video-section {
+    width: 100%;
+  }
+
+  .video-section video {
+    width: 66%;
+    height: auto;
+  }
+
+  .intel-section {
+    width: 500px;
+    height: auto;
+    padding-bottom: 70px;
+    background-color: var(--supplementary-bg-color-without-opacity);
+  } */
+}
+
+@media screen and (min-width: 1201px) and (max-width: 2440px) {
+  .container {
+    padding-inline: 32px;
+  }
+
+  .room-intelligence {
+    padding-top: 20px;
+    height: auto;
+  }
+
+  .video-section {
+    width: 100%;
+  }
+
+  .video-section video {
+    width: 65%;
+    height: auto;
+  }
+
+  .intel-section {
+    width: 500px;
+    height: auto;
+    padding-bottom: 70px;
+    background-color: var(--supplementary-bg-color-without-opacity);
+  }
+}
+
+@media screen and (min-width: 2441px) and (max-width: 4000px) {
+  .intel-section {
+    height: auto;
+  }
 }

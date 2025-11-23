@@ -15,7 +15,9 @@
           Cleaver-Brooks ClearFire&reg;-CS Condensing Boiler Named Most Valuable
           Product of the Year by Industry Professionals.
 
-          <a href="" class="announcement-link">Learn More &rarr;</a>
+          <a href="javascript:void(0);" class="announcement-link"
+            >Learn More &rarr;</a
+          >
         </p>
       </div>
     </div>
@@ -25,13 +27,13 @@
         <div role="navigation" class="container">
           <ul>
             <li>
-              <a href="" class="find-rep">
+              <a href="javascript:void(0);" class="find-rep">
                 <i class="fa-solid fa-user"></i>
                 Find a Rep</a
               >
             </li>
             <li>
-              <a href="" class="parts-store">
+              <a href="javascript:void(0);" class="parts-store">
                 <i class="fa-solid fa-cart-shopping"></i>
                 Parts Store</a
               >
@@ -106,24 +108,24 @@
             </div>
 
             <ul>
-              <li><a href="">solutions</a></li>
-              <li><a href="">products</a></li>
-              <li><a href="">rentals</a></li>
-              <li><a href="">industries</a></li>
-              <li><a href="">education & training</a></li>
-              <li><a href="">company info</a></li>
+              <li><a href="javascript:void(0);">solutions</a></li>
+              <li><a href="javascript:void(0);">products</a></li>
+              <li><a href="javascript:void(0);">rentals</a></li>
+              <li><a href="javascript:void(0);">industries</a></li>
+              <li><a href="javascript:void(0);">education & training</a></li>
+              <li><a href="javascript:void(0);">company info</a></li>
             </ul>
 
             <div class="secondary-list-for-mobile">
               <ul>
                 <li>
-                  <a href="" class="find-rep">
+                  <a href="javascript:void(0);" class="find-rep">
                     <i class="fa-solid fa-user"></i>
                     Find a Rep</a
                   >
                 </li>
                 <li>
-                  <a href="" class="parts-store">
+                  <a href="javascript:void(0);" class="parts-store">
                     <i class="fa-solid fa-cart-shopping"></i>
                     Parts Store</a
                   >
@@ -142,7 +144,30 @@
     <main>
       <!-- Hero Section (main introduction area) -->
       <section class="hero">
-        <div class="hero-bg">
+        <picture class="hero-img">
+          <source
+            media="(min-width: 1024px)"
+            srcset="./assets/image/boiler-room-interior.png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="./assets/image/boiler-room-interior.png"
+          />
+          <img
+            src="./assets/image/boiler-room-interior.png"
+            alt="Boiler Room Solutions Hero"
+          />
+        </picture>
+
+        <div class="container hero-content">
+          <h1>
+            Comprehensive <br />
+            Boiler Room Solutions
+          </h1>
+          <a href="javascript:void(0);" class="learn-more-btn">Learn More</a>
+        </div>
+        <!-- Old way -->
+        <!-- <div class="hero-bg">
           <div class="hero-title">
             <h1>
               Comprehensive <br />
@@ -152,20 +177,19 @@
           <div class="learn-more-btn">
             <a href="">learn more</a>
           </div>
-        </div>
+        </div> -->
       </section>
       <!-- About Us section -->
       <section>
         <div class="container who-we-are">
-          <div class="text">
-            <h2>Who We Are</h2>
-          </div>
-          <div class="vertical-line"></div>
+          <h2 class="title">Who We Are</h2>
           <div class="info">
             <p>
               Founded in 1929, Cleaver-Brooks is a complete boiler room
-              solutions provider that helps businesses run better every day. It
-              develops hot water and steam generation products
+              solutions provider that helps
+              <span class="br-desktop"></span>
+              businesses run better every day. It develops hot water and steam
+              generation products
               <span class="br-desktop"></span> aimed at integrating and
               optimizing the total boiler/burner/control/stack exhaust system
               <span class="br-desktop"></span>
@@ -178,7 +202,7 @@
               Our dedicated reps help you commission your system, obtain parts
               and service, and provide product training.
             </p>
-            <a href="">
+            <a href="javascript:void(0);">
               <i class="fa-solid fa-magnifying-glass"></i>
               Find a Rep Near You</a
             >
@@ -227,12 +251,13 @@
                 to providing parts and service after the sale, to product
                 training.
               </p>
-              <a href="" class="cta">Learn More &rarr;</a>
+              <a href="javascript:void(0);" class="cta">Learn More &rarr;</a>
             </div>
             <div class="sol-item-image">
               <img
                 src="./assets/image/rental.png"
                 alt="Rentals - We Provide. Nationwide"
+                loading="lazy"
               />
             </div>
           </div>
@@ -246,12 +271,13 @@
                 that help them be more environmentally friendly, decrease fuel
                 costs, increase efficiency, and meet ever-stringent guidelines.
               </p>
-              <a href="" class="cta">Learn More &rarr;</a>
+              <a href="javascript:void(0);" class="cta">Learn More &rarr;</a>
             </div>
-            <div class="sol-item-image">
+            <div class="sol-item-image last-image">
               <img
                 src="./assets/image/custom-sol.png"
                 alt="Custom Solutions - Lower Emissions"
+                loading="lazy"
               />
             </div>
           </div>
@@ -262,7 +288,7 @@
         <div class="container recent-news">
           <div class="recent-news-header">
             <h2>Recent News</h2>
-            <a href="">View All News &rarr;</a>
+            <a href="javascript:void(0);">View All News &rarr;</a>
           </div>
           <div class="news-cards">
             <!-- Card 1 -->
@@ -272,6 +298,7 @@
                   src="./assets/image/IoT.png"
                   alt=" Desperate Times Call for Innovative IoT Boiler Monitoring
                   Measures"
+                  loading="lazy"
                 />
               </div>
               <div class="news-card-title">
@@ -291,12 +318,18 @@
                   and respond quickly.
                 </p>
               </div>
-              <div class="news-link"><a href="">Reard More &rarr;</a></div>
+              <div class="news-link">
+                <a href="javascript:void(0);">Reard More &rarr;</a>
+              </div>
             </div>
             <!-- Card 2 -->
             <div class="new-card">
               <div class="news-card-image">
-                <img src="./assets/image/covid19.png" alt="COVID-19 Pandemic" />
+                <img
+                  src="./assets/image/covid19.png"
+                  alt="COVID-19 Pandemic"
+                  loading="lazy"
+                />
               </div>
               <div class="news-card-title">
                 <h3>Our Commitment to Customers During COVID-19 Pandemic</h3>
@@ -312,7 +345,9 @@
                   evolve.
                 </p>
               </div>
-              <div class="news-link"><a href="">Reard More &rarr;</a></div>
+              <div class="news-link">
+                <a href="javascript:void(0);">Reard More &rarr;</a>
+              </div>
             </div>
             <!-- Card 3 -->
             <div class="new-card">
@@ -320,6 +355,7 @@
                 <img
                   src="./assets/image/CleaverBrooks.jpg"
                   alt="Cleaver Brooks"
+                  loading="lazy"
                 />
               </div>
               <div class="news-card-title">
@@ -338,7 +374,9 @@
                   solution for a wide range of commercial applications.
                 </p>
               </div>
-              <div class="news-link"><a href="">Reard More &rarr;</a></div>
+              <div class="news-link">
+                <a href="javascript:void(0);">Reard More &rarr;</a>
+              </div>
             </div>
           </div>
           <div class="slider">
@@ -349,11 +387,24 @@
       </section>
       <!-- Products Section -->
       <section class="product-sec">
-        <div class="products-bg">
-          <div class="product-title">
-            <h2>Products</h2>
-          </div>
+        <picture class="products-bg">
+          <source
+            media="(min-width: 1024px)"
+            srcset="./assets/image/products-bg-gray.png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="./assets/image/products-bg-gray.png"
+          />
+          <img
+            src="./assets/image/products-bg-gray.png"
+            alt="Product section image"
+          />
+        </picture>
+        <div class="container product-title">
+          <h2>Products</h2>
         </div>
+
         <div class="container featured-categories">
           <div class="featured-categories-title">
             <h2>Featured Categories</h2>
@@ -361,10 +412,14 @@
           <div class="categories-items">
             <div class="category-item">
               <div class="category-item-img">
-                <img src="./assets/image/boiler.jpg" />
+                <img
+                  src="./assets/image/boiler.jpg"
+                  alt="Boiler"
+                  loading="lazy"
+                />
               </div>
               <div class="category-item-link">
-                <a href="">
+                <a href="javascript:void(0);">
                   Boilers
                   <i class="fa-solid fa-arrow-right"></i>
                 </a>
@@ -372,10 +427,14 @@
             </div>
             <div class="category-item">
               <div class="category-item-img">
-                <img src="./assets/image/burners.jpg" />
+                <img
+                  src="./assets/image/burners.jpg"
+                  alt="Burners"
+                  loading="lazy"
+                />
               </div>
               <div class="category-item-link">
-                <a href="">
+                <a href="javascript:void(0);">
                   Burners
                   <i class="fa-solid fa-arrow-right"></i>
                 </a>
@@ -383,10 +442,14 @@
             </div>
             <div class="category-item">
               <div class="category-item-img">
-                <img src="./assets/image/control.jpg" alt="controls" />
+                <img
+                  src="./assets/image/control.jpg"
+                  alt="controls"
+                  loading="lazy"
+                />
               </div>
               <div class="category-item-link">
-                <a href="">
+                <a href="javascript:void(0);">
                   Controls
                   <i class="fa-solid fa-arrow-right"></i>
                 </a>
@@ -397,10 +460,11 @@
                 <img
                   src="./assets/image/heat_recovery.jpg"
                   alt="Heat Recovery"
+                  loading="lazy"
                 />
               </div>
               <div class="category-item-link">
-                <a href="">
+                <a href="javascript:void(0);">
                   Heat Recovery
                   <i class="fa-solid fa-arrow-right"></i>
                 </a>
@@ -408,10 +472,14 @@
             </div>
             <div class="category-item">
               <div class="category-item-img">
-                <img src="./assets/image/water_system.jpg" alt="water system" />
+                <img
+                  src="./assets/image/water_system.jpg"
+                  alt="water system"
+                  loading="lazy"
+                />
               </div>
               <div class="category-item-link">
-                <a href="">
+                <a href="javascript:void(0);">
                   Water Systems
                   <i class="fa-solid fa-arrow-right"></i>
                 </a>
@@ -422,10 +490,11 @@
                 <img
                   src="./assets/image/wall_stack.jpg"
                   alt="exhaust solution"
+                  loading="lazy"
                 />
               </div>
               <div class="category-item-link">
-                <a href="">
+                <a href="javascript:void(0);">
                   Exhaust Solutions
                   <i class="fa-solid fa-arrow-right"></i>
                 </a>
@@ -436,10 +505,11 @@
                 <img
                   src="./assets/image/waterloo.jpg"
                   alt="parts and service"
+                  loading="lazy"
                 />
               </div>
               <div class="category-item-link">
-                <a href="">
+                <a href="javascript:void(0);">
                   Parts & Service
                   <i class="fa-solid fa-arrow-right"></i>
                 </a>
@@ -456,7 +526,11 @@
             <!-- product 1 -->
             <div class="viewed-product">
               <div class="product-img">
-                <img src="./assets/image/boiler.jpg" alt="Boiler image" />
+                <img
+                  src="./assets/image/boiler.jpg"
+                  alt="Boiler image"
+                  loading="lazy"
+                />
               </div>
               <div class="product-content">
                 <div class="product-name">
@@ -477,7 +551,11 @@
             <!-- product 2 -->
             <div class="viewed-product">
               <div class="product-img">
-                <img src="./assets/image/cbex.png" alt="CBEX Elite " />
+                <img
+                  src="./assets/image/cbex.png"
+                  alt="CBEX Elite"
+                  loading="lazy"
+                />
               </div>
               <div class="product-content">
                 <div class="product-name">
@@ -498,7 +576,11 @@
             <!-- product 3 -->
             <div class="viewed-product">
               <div class="product-img">
-                <img src="./assets/image/cfc.jpeg" alt="ClearFire®-CE" />
+                <img
+                  src="./assets/image/cfc.jpeg"
+                  alt="ClearFire®-CE"
+                  loading="lazy"
+                />
               </div>
               <div class="product-content">
                 <div class="product-name">
@@ -522,6 +604,7 @@
                 <img
                   src="./assets/image/ClearFire-LC.jpg"
                   alt="ClearFire®-LC"
+                  loading="lazy"
                 />
               </div>
               <div class="product-content">
@@ -542,6 +625,55 @@
             </div>
             <a class="pro-prev"><i class="fa-solid fa-arrow-left"></i></a>
             <a class="pro-next"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </section>
+      <!-- Discover More -->
+      <section>
+        <div class="container discover-more">
+          <h2 class="discover-main-title">Discover More</h2>
+          <div class="discover-grid">
+            <div class="discover-card">
+              <div class="discover-card-image">
+                <img
+                  src="./assets/image/prod-index.png"
+                  alt="PRODUCT INDEX"
+                  loading="lazy"
+                />
+              </div>
+              <div class="discover-card-content-left-side">
+                <p class="discover-tag">PRODUCT INDEX</p>
+                <h3 class="discover-title">Have Something in Mind?</h3>
+                <p class="discover-desc">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit enam
+                  nonummy lorem ipsum dolor sit amet consectetur adipiscing elit
+                  enam.
+                </p>
+                <a class="cta" href="javascript:void(0);">Learn More &rarr;</a>
+              </div>
+            </div>
+            <div class="discover-card">
+              <div class="discover-card-image">
+                <img
+                  src="./assets/image/find-aa-rep.png"
+                  alt="FIND A REP"
+                  loading="lazy"
+                />
+              </div>
+              <div class="discover-card-content-right-side">
+                <p class="discover-tag">FIND A REP</p>
+                <h3 class="discover-title">
+                  Over 1,500 <span class="br"></span>
+                  Reps Worldwide
+                </h3>
+                <p class="discover-desc">
+                  The Cleaver-Brooks Representative Association (CBRA) is the
+                  first and only dedicated sales and service rep network in the
+                  industry.
+                </p>
+                <a class="cta" href="javascript:void(0);">Learn More &rarr;</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

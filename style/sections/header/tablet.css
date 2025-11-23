@@ -62,11 +62,6 @@
     position: relative;
     display: block;
     border-bottom: 3px solid var(--supplementary-bg-color);
-    text-decoration: none;
-    text-transform: uppercase;
-    color: var(--primary-color, #003150);
-    font-family: "Helvetica Neue Medium", Arial, Sans-Serif;
-    font-size: 12px;
     letter-spacing: 0.5px;
     padding-inline: 10px;
   }
