@@ -15,6 +15,7 @@
 @import url(sections/products.css);
 @import url(sections/recently-viewed-product.css);
 @import url(sections/discover-more.css);
+@import url(sections/footer.css);
 
 @import url(responsive/mobile.css);
 @import url(responsive/tablet.css);

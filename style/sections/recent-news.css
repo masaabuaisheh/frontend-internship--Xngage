@@ -154,11 +154,11 @@
   }
 
   .prev {
-    left: 100px;
+    left: 22%;
   }
 
   .next {
-    right: 100px;
+    right: 22%;
   }
 }
 
