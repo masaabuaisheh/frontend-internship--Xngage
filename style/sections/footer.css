@@ -29,7 +29,7 @@
 .footer-brand-links {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 40px;
 }
 
 .footer-col .footer-brand-links a {
@@ -87,7 +87,7 @@
 .social {
   display: flex;
   gap: 5px;
-  padding-top: 20px;
+  padding-top: 20px !important;
 }
 
 .social li {
