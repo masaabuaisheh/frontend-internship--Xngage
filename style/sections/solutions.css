@@ -135,6 +135,18 @@
     padding-top: 10px;
     font-size: 12px;
   }
+
+  .sol-item-content p,
+  .sol-item-content-reverse p {
+    --max-lines: 2;
+    display: -webkit-box; /* layout for text-clamping */
+    overflow: hidden;
+    -webkit-box-orient: vertical; /* box layout from top to bottom */
+    -webkit-line-clamp: var(
+      --max-lines
+    ); /* show max-lines then cut the rest (add ...)*/
+    line-clamp: 2;
+  }
 }
 
 /* Header style for tablet */
@@ -169,6 +181,18 @@
     padding-top: 10px;
     font-size: 12px;
   }
+
+  .sol-item-content p,
+  .sol-item-content-reverse p {
+    --max-lines: 2;
+    display: -webkit-box; /* layout for text-clamping */
+    overflow: hidden;
+    -webkit-box-orient: vertical; /* box layout from top to bottom */
+    -webkit-line-clamp: var(
+      --max-lines
+    ); /* show max-lines then cut the rest (add ...)*/
+    line-clamp: 2;
+  }
 }
 
 /* Tablet / Small Laptop — 769px to 1200px */
@@ -181,6 +205,10 @@
   .sol-item-content-reverse {
     width: 100%;
     padding: 0 20px;
+  }
+
+  .cta {
+    padding-top: 10px;
   }
 
   .sol-item-content p,
