@@ -222,11 +222,11 @@
   }
 
   .prev {
-    left: 200px;
+    left: 40%;
   }
 
   .next {
-    right: 200px;
+    right: 40%;
   }
 }
 
