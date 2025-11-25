@@ -20,6 +20,7 @@
   z-index: 999;
   word-break: keep-all;
   pointer-events: none;
+  background-color: #d7d3c7;
 }
 
 .prometha {
