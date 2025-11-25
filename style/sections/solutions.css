@@ -25,7 +25,7 @@
 
 .sol-item-image {
   flex: 1;
-  aspect-ratio: 307/192;
+  aspect-ratio: 307/172;
 }
 
 .sec-label {
@@ -74,7 +74,7 @@
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  aspect-ratio: 307/192;
+  aspect-ratio: 307/172;
 }
 
 .solution-item-reverse {
@@ -94,7 +94,6 @@
 
 .last-image {
   padding-bottom: 20px;
-  aspect-ratio: 307/192;
 }
 
 @media screen and (max-width: 576px) {
