@@ -113,10 +113,12 @@
     gap: 20px;
   }
 
-  .sol-item-image img {
-    width: 100%;
-    height: auto;
-  }
+  /* .sol-item-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    aspect-ratio: 307/192;
+  } */
 
   .sol-item-content,
   .sol-item-content-reverse {
@@ -152,10 +154,10 @@
     font-size: 30px;
   }
 
-  .sol-item-image img {
+  /* .sol-item-image img {
     width: 100%;
     height: auto;
-  }
+  } */
 
   .sol-item-content,
   .sol-item-content-reverse {
