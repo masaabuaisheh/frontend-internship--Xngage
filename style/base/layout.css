@@ -9,6 +9,7 @@
   max-width: 1320px; /* stop container from getting too wide */
   margin-inline: auto; /* centers horizontally */
   padding-inline: 16px; /* left/right padding */
+  width: 100%;
 }
 
 .container-fluid {

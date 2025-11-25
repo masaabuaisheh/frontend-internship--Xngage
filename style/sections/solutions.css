@@ -20,6 +20,12 @@
   flex-direction: column;
   justify-content: center;
   padding-right: 40px;
+  flex: 1;
+}
+
+.sol-item-image {
+  flex: 1;
+  aspect-ratio: 307/192;
 }
 
 .sec-label {
@@ -41,7 +47,7 @@
   padding-top: 20px;
   font-family: "Helvetica Neue Medium", Arial, sans-serif;
   color: var(--text-color, #1f1f1f);
-  font-size: 35px;
+  font-size: clamp(20px, 3vw, 35px);
   font-weight: normal;
 }
 
@@ -65,8 +71,10 @@
 }
 
 .sol-item-image img {
-  width: 750px;
-  height: 350px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  aspect-ratio: 307/192;
 }
 
 .solution-item-reverse {
@@ -81,6 +89,7 @@
   flex-direction: column;
   justify-content: center;
   padding-left: 40px;
+  flex: 1;
 }
 
 .last-image {
@@ -161,31 +170,26 @@
 }
 
 /* Tablet / Small Laptop — 769px to 1200px */
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .container {
     padding-inline: 32px;
   }
 
-  .solution-item,
-  .solution-item-reverse {
-    flex-direction: column;
-    gap: 30px;
-    text-align: center;
-  }
-
-  .sol-item-image img {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-  }
-
   .sol-item-content,
   .sol-item-content-reverse {
+    width: 100%;
     padding: 0 20px;
-    text-align: center;
   }
 
-  .horizantal-line {
-    margin: 0 auto;
+  .sol-item-content p,
+  .sol-item-content-reverse p {
+    --max-lines: 2;
+    display: -webkit-box; /* layout for text-clamping */
+    overflow: hidden;
+    -webkit-box-orient: vertical; /* box layout from top to bottom */
+    -webkit-line-clamp: var(
+      --max-lines
+    ); /* show max-lines then cut the rest (add ...)*/
+    line-clamp: 2;
   }
 }
