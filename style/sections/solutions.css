@@ -94,6 +94,7 @@
 
 .last-image {
   padding-bottom: 20px;
+  aspect-ratio: 307/192;
 }
 
 @media screen and (max-width: 576px) {
