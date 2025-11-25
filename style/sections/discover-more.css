@@ -1,5 +1,5 @@
 .discover-more {
-  padding-top: 60px;
+  padding-top: 100px;
 }
 
 .discover-main-title {
@@ -73,15 +73,12 @@
   padding: 0 30px 0 30px;
   letter-spacing: 1.5px;
   line-height: 20px;
+  min-height: 120px;
 }
 
 .cta-disc {
   text-decoration: none;
   font-size: 14px;
-}
-
-.discover-card-content-left-side .cta-disc,
-.discover-card-content-right-side .cta-disc {
   color: var(--white-color);
   padding: 30px 0 10px 30px;
   font-family: "Helvetica Neue Regular", Arial, sans-serif;
@@ -112,18 +109,27 @@
   }
 
   .discover-tag {
-    padding: 30px 0 10px 30px;
+    padding: 20px 0 0 20px;
+  }
+
+  .discover-title {
+    padding: 20px 2px 15px 20px;
+  }
+
+  .discover-desc {
+    min-height: 80px;
+    padding: 0 30px 0 20px;
+  }
+
+  .cta-disc {
+    padding: 20px 0 10px 20px;
+    font-size: 12px;
   }
 
   .discover-card-content-left-side,
   .discover-card-content-right-side {
     height: 100%;
     width: 100%;
-  }
-
-  .discover-card-content-left-side .cta,
-  .discover-card-content-right-side .cta {
-    padding: 30px 0 30px 30px;
   }
 
   .discover-card-image img {
@@ -159,9 +165,9 @@
     height: auto;
   }
 
-  .discover-card-content-left-side .cta,
-  .discover-card-content-right-side .cta {
-    padding: 30px 0 30px 30px;
+  .cta-disc {
+    padding: 20px 0 10px 30px;
+    font-size: 13px;
   }
 
   .discover-card-image img {

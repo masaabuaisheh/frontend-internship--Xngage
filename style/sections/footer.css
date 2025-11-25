@@ -17,11 +17,6 @@
   text-decoration: none;
 }
 
-/* left*/
-.footer-brand .a {
-  fill: var(--white-color);
-}
-
 .footer-logo {
   max-width: 150px;
 }
@@ -153,7 +148,7 @@
   display: none;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .footer {
     display: flex;
     flex-direction: column;
@@ -166,9 +161,10 @@
   .container .footer-brand,
   .container .social,
   .footer .footer-bottom,
-  .container .footer-col .footer-title h4,
+  .footer-col .footer-title h4,
+  .footer-col .footer-title span,
   .container .footer-col .footer-title .more-info {
-    padding-inline: 16px;
+    padding-inline: 24px;
   }
 
   .footer-brand-links {

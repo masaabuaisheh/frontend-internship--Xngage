@@ -1,5 +1,5 @@
 .recent-news {
-  padding-top: 40px;
+  padding-top: 80px;
   position: relative;
 }
 
@@ -134,12 +134,20 @@
   }
 
   .news-cards {
+    /* display: flex;
+    gap: 20px;
+    overflow-x: auto; */
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
   }
 
+  /* .news-cards::-webkit-scrollbar {
+    display: none;
+  } */
+
   .new-card {
+    /* flex: 0 0 20em; */
     height: auto;
   }
 
@@ -307,7 +315,7 @@
   }
 
   .new-card {
-    padding-bottom: 60px;
+    padding-bottom: 80px;
     width: 100%;
     height: auto;
   }

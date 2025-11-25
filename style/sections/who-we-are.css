@@ -50,10 +50,24 @@
   line-height: 23px;
   height: auto;
   padding: 22px 30px 22px 30px;
-  background-image: url(../../assets/image/two-hands--removebg-preview.png);
+  /* background-image: url(../../assets/image/two-hands--removebg-preview.png);
   background-repeat: no-repeat;
   background-size: 150px;
-  background-position: bottom right;
+  background-position: bottom right; */
+}
+
+.adv::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  background-image: url("../../assets/image/two-hands--removebg-preview.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  pointer-events: none;
 }
 
 .adv p {

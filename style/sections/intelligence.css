@@ -15,7 +15,7 @@
   position: absolute;
   width: 410px;
   /* height: 280px; */
-  background-color: var(--supplementary-bg-color-without-opacity);
+  /* background-color: var(--supplementary-bg-color-without-opacity); */
   padding: 40px 60px;
   z-index: 999;
   word-break: keep-all;
@@ -198,7 +198,8 @@
     width: 500px;
     height: auto;
     padding-bottom: 70px;
-    background-color: var(--supplementary-bg-color-without-opacity);
+    /* background-color: var(--supplementary-bg-color-without-opacity); */
+    background-color: #d7d3c7;
   }
 }
 

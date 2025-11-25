@@ -1,8 +1,5 @@
 /* Start announcement bar style */
 .announcement-bar {
-  /* display: flex;
-  justify-content: center; */
-  /* align-items: center; */
   text-align: center;
   padding: 20px 0;
   background-color: var(--supplementary-bg-color, #d7d3c780);
@@ -76,20 +73,20 @@ a.announcement-link {
   padding-right: 50px;
 }
 
-.logo svg {
+.logo img {
   max-width: 100%;
   max-height: 100%;
   height: auto;
 }
 
-.a {
+/* .a {
   fill: #5b6770;
 }
 
 .logo .x-left,
 .x-middle {
   fill: var(--logo-bg-color, #e98300);
-}
+} */
 
 .main-menu ul {
   display: flex;
