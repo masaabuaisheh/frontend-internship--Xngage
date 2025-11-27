@@ -1,16 +1,16 @@
-@use "../base/index";
+@use "../abstracts/index" as abstract;
 
 .recent-news {
   padding-top: 80px;
   position: relative;
 
-  .recent-news-header {
+  &-header {
     padding-bottom: 20px;
 
     h2 {
       text-align: center;
       font-family: "Helvetica Neue Bold", Arial, sans-serif;
-      color: index.$text-color;
+      color: abstract.$text-color;
       font-size: 28px;
     }
 
@@ -26,15 +26,13 @@
   }
 
   .news-cards {
-    display: flex;
-    justify-content: space-between;
+    @include abstract.flexbox($justify: space-between);
     gap: 20px;
 
     .new-card {
       box-sizing: border-box;
-      display: flex;
+      @include abstract.flexbox($direction: column);
       flex-wrap: wrap;
-      flex-direction: column;
 
       .news-card-image {
         img {
@@ -45,7 +43,7 @@
         }
       }
 
-      .news-card-title {
+      &-title {
         padding: 20px 0 10px 0;
         font-family: "Helvetica Neue Regular", Arial, sans-serif;
         font-weight: bold;
@@ -75,7 +73,7 @@
 
         a {
           text-decoration: none;
-          color: index.$primary-color;
+          color: abstract.$primary-color;
           font-family: "Helvetica Neue Medium", Arial, sans-serif;
           font-size: 15px;
           letter-spacing: 0.5px;
@@ -93,7 +91,7 @@
     border-radius: 50%;
     user-select: none;
     z-index: 3000;
-    color: index.$white-color;
+    color: abstract.$white-color;
     font-size: clamp(15px, 2vw, 15px);
     padding: clamp(16px, 1.2vw, 16px);
   }
@@ -103,12 +101,12 @@
     left: 0;
 
     &:hover {
-      background-color: index.$primary-color;
+      background-color: abstract.$primary-color;
     }
   }
 
   .next {
-    background-color: index.$primary-color;
+    background-color: abstract.$primary-color;
     right: 0;
 
     &:hover {
@@ -124,7 +122,7 @@
   }
 
   .recent-news {
-    .recent-news-header {
+    &-header {
       padding-bottom: 20px;
 
       a {
@@ -142,18 +140,14 @@
       .new-card {
         height: auto;
 
-        .news-card-image {
+        &-image {
           img {
-            @include index.media-contain;
+            @include abstract.media-contain;
             aspect-ratio: 547 / 330;
           }
         }
 
-        .news-card-title {
-          padding: 10px 0 10px 0;
-        }
-
-        .news-card-title {
+        &-title {
           padding: 10px 0 10px 0;
         }
 
@@ -192,9 +186,9 @@
         width: 100%;
         height: auto;
 
-        .news-card-image {
+        &-image {
           img {
-           @include index.media-contain;
+            @include abstract.media-contain;
             aspect-ratio: 547 / 330;
           }
         }
@@ -209,7 +203,7 @@
       }
     }
 
-    .recent-news-header {
+    &-header {
       padding-bottom: 20px;
 
       a {
@@ -249,7 +243,7 @@
         width: 100%;
         height: auto;
 
-        .news-card-image {
+        &-image {
           img {
             width: 100%;
             height: auto;
@@ -267,7 +261,7 @@
       }
     }
 
-    .recent-news-header {
+    &-header {
       padding-bottom: 20px;
     }
 

@@ -1,4 +1,4 @@
-@use "../base/index";
+@use "../abstracts/index" as abstract;
 
 .product-sec {
   position: relative;
@@ -13,11 +13,11 @@
   }
 
   .product-title {
-    @include index.absolute-center;
+    @include abstract.absolute-center;
     top: 125px;
     text-align: center;
     color: #000;
-    color: index.$white-color;
+    color: abstract.$white-color;
     z-index: 2;
 
     h2 {
@@ -30,10 +30,10 @@
   .featured-categories {
     padding-top: 60px;
 
-    .featured-categories-title {
+    &-title {
       text-align: center;
       font-family: "Helvetica Neue Bold", Arial, sans-serif;
-      color: index.$text-color;
+      color: abstract.$text-color;
       font-size: 24px;
     }
 
@@ -47,12 +47,10 @@
       .category-item {
         text-align: center;
 
-        .category-item-img {
+        &-img {
           width: 200px;
           height: 250px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          @include abstract.flexbox($align: center, $justify: center);
 
           img {
             max-width: 100%;
@@ -60,10 +58,10 @@
           }
         }
 
-        .category-item-link {
+        &-link {
           a {
             text-decoration: none;
-            color: index.$primary-color;
+            color: abstract.$primary-color;
             font-family: "Helvetica Neue Medium", Arial, sans-serif;
             font-size: 14px;
             letter-spacing: 0.5px;
@@ -91,7 +89,7 @@
     .featured-categories {
       padding-top: 30px;
 
-      .featured-categories-title {
+      &-title {
         font-size: 18px;
       }
 
@@ -126,7 +124,7 @@
     }
 
     .featured-categories {
-      .featured-categories-title {
+      &-title {
         font-size: 20px;
       }
 

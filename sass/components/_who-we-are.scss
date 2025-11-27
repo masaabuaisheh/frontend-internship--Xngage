@@ -1,9 +1,7 @@
-@use "../base/index";
+@use "../abstracts/index" as abstract;
 
 .who-we-are {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include abstract.flexbox($align: center, $justify: space-between);
   height: auto;
   position: relative;
 
@@ -22,8 +20,7 @@
     flex: 1;
     position: relative;
     padding: 10px 10px 10px 40px;
-    display: flex;
-    align-items: center;
+    @include abstract.flexbox($align: center);
 
     p {
       text-align: left;
@@ -38,13 +35,13 @@
       left: 0;
       width: 3px;
       height: 100%;
-      background-color: index.$supplementary-bg-color-without-opacity;
+      background-color: abstract.$supplementary-bg-color-without-opacity;
     }
   }
 
   .adv {
-    background-color: index.$red-color-with-opacity;
-    color: index.$white-color;
+    background-color: abstract.$red-color-with-opacity;
+    color: abstract.$white-color;
     letter-spacing: 1px;
     width: 250px;
     position: relative;
@@ -75,13 +72,13 @@
 
     a {
       text-decoration: none;
-      color: index.$white-color;
+      color: abstract.$white-color;
       font-size: 12px;
       font-family: "Helvetica Neue Regular", Arial, sans-serif;
     }
 
     i {
-      color: index.$white-color;
+      color: abstract.$white-color;
     }
   }
 }
@@ -92,8 +89,12 @@
   }
 
   .who-we-are {
-    display: flex;
-    flex-direction: column;
+    @include abstract.flexbox(
+      $direction: column,
+      $align: center,
+      $justify: space-between
+    );
+
     padding-top: 40px;
 
     .info {
@@ -126,8 +127,11 @@
   }
 
   .who-we-are {
-    display: flex;
-    flex-direction: column;
+    @include abstract.flexbox(
+      $direction: column,
+      $align: center,
+      $justify: space-between
+    );
     padding-top: 40px;
 
     .info {
@@ -160,8 +164,12 @@
   }
 
   .who-we-are {
-    display: flex;
-    flex-direction: column;
+    @include abstract.flexbox(
+      $direction: column,
+      $align: center,
+      $justify: space-between
+    );
+
     padding-top: 40px;
 
     .info {

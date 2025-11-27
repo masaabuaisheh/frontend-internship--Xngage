@@ -1,4 +1,4 @@
-@use "../base/index";
+@use "../abstracts/index" as abstract;
 
 .sol-section {
   padding-top: 100px;
@@ -6,26 +6,23 @@
   .sol-title {
     text-align: center;
     font-family: "Helvetica Neue Bold", Arial, sans-serif;
-    color: index.$text-color;
+    color: abstract.$text-color;
     font-size: 28px;
   }
 
   .solution-item {
     padding-top: 20px;
-    display: flex;
-    justify-content: space-between;
+    @include abstract.flexbox($justify: space-between);
 
     .sol-item-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      @include abstract.flexbox($direction: column, $justify: center);
       padding-right: 40px;
       flex: 1;
 
       h3 {
         padding-top: 20px;
         font-family: "Helvetica Neue Medium", Arial, sans-serif;
-        color: index.$text-color;
+        color: abstract.$text-color;
         font-size: clamp(20px, 3vw, 35px);
         font-weight: normal;
       }
@@ -33,7 +30,7 @@
       p:not(.sec-label) {
         padding-top: 20px;
         font-family: "Helvetica Neue Regular", Arial, sans-serif;
-        color: index.$text-color;
+        color: abstract.$text-color;
         letter-spacing: 1px;
         font-size: 14px;
         line-height: 20px;
@@ -41,7 +38,7 @@
     }
 
     .sec-label {
-      color: index.$supplementary-text-color;
+      color: abstract.$supplementary-text-color;
       font-family: "Helvetica Neue Regular", Arial, sans-serif;
       text-transform: uppercase;
       position: relative;
@@ -50,14 +47,12 @@
       font-size: 13px;
 
       &::after {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 20px;
-        left: 0;
-        width: 25px;
-        height: 2px;
-        background-color: #afafaf;
+        @include abstract.horizontal-line(
+          $top: 20px,
+          $width: 25px,
+          $height: 2px,
+          $color: #afafaf
+        );
       }
       &:hover::after {
         animation: shrink-grow 0.6s ease-out forwards;
@@ -81,7 +76,7 @@
     .cta {
       padding-top: 30px;
       text-decoration: none;
-      color: index.$primary-color;
+      color: abstract.$primary-color;
       font-family: "Helvetica Neue Medium", Arial, sans-serif;
       font-size: 14px;
       letter-spacing: 0.5px;
@@ -90,21 +85,17 @@
 
   .solution-item-reverse {
     padding-top: 30px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    @include abstract.flexbox($direction: row-reverse, $justify: space-between);
 
     .sol-item-content-reverse {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      @include abstract.flexbox($direction: column, $justify: center);
       padding-left: 40px;
       flex: 1;
 
       h3 {
         padding-top: 20px;
         font-family: "Helvetica Neue Medium", Arial, sans-serif;
-        color: index.$text-color;
+        color: abstract.$text-color;
         font-size: clamp(20px, 3vw, 35px);
         font-weight: normal;
       }
@@ -112,7 +103,7 @@
       p:not(.sec-label) {
         padding-top: 20px;
         font-family: "Helvetica Neue Regular", Arial, sans-serif;
-        color: index.$text-color;
+        color: abstract.$text-color;
         letter-spacing: 1px;
         font-size: 14px;
         line-height: 20px;
@@ -126,7 +117,7 @@
     .cta {
       padding-top: 30px;
       text-decoration: none;
-      color: index.$primary-color;
+      color: abstract.$primary-color;
       font-family: "Helvetica Neue Medium", Arial, sans-serif;
       font-size: 14px;
       letter-spacing: 0.5px;
@@ -155,10 +146,10 @@
   .sol-section {
     box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2), 0 4px 12px rgba(0, 0, 0, 0.2);
     .solution-item {
-      flex-direction: column;
+      @include abstract.flexbox($direction: column, $justify: space-between);
       gap: 20px;
 
-      .sol-item-content {
+      &-content {
         padding: 0;
         text-align: left;
 
@@ -180,7 +171,7 @@
     }
 
     .solution-item-reverse {
-      flex-direction: column;
+      @include abstract.flexbox($direction: column, $justify: space-between);
       gap: 20px;
 
       .sol-item-content-reverse {
@@ -218,10 +209,10 @@
 
   .sol-section {
     .solution-item {
-      flex-direction: column;
+      @include abstract.flexbox($direction: column, $justify: space-between);
       gap: 20px;
 
-      .sol-item-content {
+      &-content {
         padding: 0;
         text-align: left;
 
@@ -243,7 +234,7 @@
     }
 
     .solution-item-reverse {
-      flex-direction: column;
+      @include abstract.flexbox($direction: column, $justify: space-between);
       gap: 20px;
 
       .sol-item-content-reverse {

@@ -1,9 +1,9 @@
-@use "../base/index";
+@use "../abstracts/index" as abstract;
 
 .announcement-bar {
   text-align: center;
-  background-color: index.$supplementary-bg-color;
-  color: index.$announcement-text-color;
+  background-color: abstract.$supplementary-bg-color;
+  color: abstract.$announcement-text-color;
 
   p {
     padding: 20px 0;
@@ -16,20 +16,21 @@
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 1px;
-    color: index.$announcement-text-color;
+    color: abstract.$announcement-text-color;
   }
 }
 
 .menu-button {
   display: none;
-  color: index.$primary-color;
+  color: abstract.$primary-color;
 }
 
 .secondary-list {
   > div {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    @include abstract.flexbox(
+      $align: center,
+      $justify: flex-end
+    ); // align justify
     height: 40px;
   }
 
@@ -42,11 +43,11 @@
 
   a {
     text-decoration: none;
-    color: index.$primary-color;
+    color: abstract.$primary-color;
     font-family: "Helvetica Neue Medium", sans-serif;
     font-size: 15px;
     > i {
-      color: index.$primary-color;
+      color: abstract.$primary-color;
     }
   }
 
@@ -56,14 +57,13 @@
 }
 
 .content {
-  box-shadow: 0 -1px 10px index.$primary-color-with-opacity;
+  box-shadow: 0 -1px 10px abstract.$primary-color-with-opacity;
   height: auto;
-  border-bottom: 4px solid index.$border-bottom-color;
+  border-bottom: 4px solid abstract.$border-bottom-color;
 
   > div {
-    display: flex;
+    @include abstract.flexbox($align: center); // align justify
     height: 80px;
-    align-items: center;
   }
 }
 
@@ -81,8 +81,7 @@
 
 .main-menu {
   ul {
-    display: flex;
-    justify-content: space-between;
+    @include abstract.flexbox($justify: space-between); // justify
     list-style-type: none;
   }
 
@@ -90,7 +89,7 @@
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-    color: index.$primary-color;
+    color: abstract.$primary-color;
     font-family: "Helvetica Neue Medium", Arial, Sans-Serif;
     font-size: clamp(12px, 1.2vw, 16px);
     letter-spacing: 1.5px;
@@ -102,10 +101,12 @@
   display: flex;
   padding-left: 40px;
 
+  @include abstract.button-style;
+
   button {
     font-weight: bold;
     text-transform: uppercase;
-    color: index.$primary-color;
+    color: abstract.$primary-color;
     font-family: "Helvetica Neue Medium", Arial, Sans-Serif;
     font-size: 16px;
     letter-spacing: 2px;
@@ -113,7 +114,7 @@
   }
 
   i {
-    color: index.$primary-color;
+    color: abstract.$primary-color;
   }
 }
 
@@ -123,15 +124,6 @@
 
 .secondary-list-for-mobile {
   display: none;
-}
-
-button {
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
 }
 
 @media screen and (max-width: 576px) {
@@ -159,8 +151,10 @@ button {
 
   .content {
     > div {
-      display: flex;
-      justify-content: space-between;
+      @include abstract.flexbox(
+        $align: center,
+        $justify: space-between
+      ); // justify
     }
   }
 
@@ -190,15 +184,14 @@ button {
     z-index: 999;
 
     ul {
-      display: flex;
-      flex-direction: column;
+      @include abstract.flexbox($direction: column); // direction
       line-height: 50px;
     }
 
     a {
       position: relative;
       display: block;
-      border-bottom: 3px solid index.$supplementary-bg-color;
+      border-bottom: 3px solid abstract.$supplementary-bg-color;
       letter-spacing: 0.5px;
       padding-inline: 10px;
     }
@@ -209,22 +202,21 @@ button {
   }
 
   .colse-menu {
-    display: flex;
-    align-items: center;
+    @include abstract.flexbox($align: center); // align
     height: 50px;
-    border-bottom: 2px solid index.$border-bottom-color;
+    border-bottom: 2px solid abstract.$border-bottom-color;
     padding-inline: 10px;
 
     i {
       font-size: 15px;
-      color: index.$primary-color;
+      color: abstract.$primary-color;
     }
   }
 
   .search-button {
     i {
       font-size: 20px;
-      color: index.$primary-color;
+      color: abstract.$primary-color;
     }
   }
 
@@ -265,8 +257,10 @@ button {
 
   .content {
     > div {
-      display: flex;
-      justify-content: space-between;
+      @include abstract.flexbox(
+        $align: center,
+        $justify: space-between
+      ); // justify
     }
   }
 
@@ -293,15 +287,14 @@ button {
     z-index: 999;
 
     ul {
-      display: flex;
-      flex-direction: column;
+      @include abstract.flexbox($direction: column); // direction
       line-height: 50px;
     }
 
     a {
       position: relative;
       display: block;
-      border-bottom: 3px solid index.$supplementary-bg-color;
+      border-bottom: 3px solid abstract.$supplementary-bg-color;
       letter-spacing: 0.5px;
       padding-inline: 10px;
     }
@@ -312,22 +305,21 @@ button {
   }
 
   .colse-menu {
-    display: flex;
-    align-items: center;
+    @include abstract.flexbox($align: center); // align
     height: 50px;
-    border-bottom: 2px solid index.$border-bottom-color;
+    border-bottom: 2px solid abstract.$border-bottom-color;
     padding-inline: 10px;
 
     i {
       font-size: 15px;
-      color: index.$primary-color;
+      color: abstract.$primary-color;
     }
   }
 
   .search-button {
     i {
       font-size: 20px;
-      color: index.$primary-color;
+      color: abstract.$primary-color;
     }
   }
 
@@ -367,8 +359,10 @@ button {
 
   .content {
     > div {
-      display: flex;
-      justify-content: space-between;
+      @include abstract.flexbox(
+        $align: center,
+        $justify: space-between
+      ); // justify
       overflow: hidden;
     }
   }
@@ -398,14 +392,14 @@ button {
     z-index: 2000;
 
     ul {
-      flex-direction: column;
+      @include abstract.flexbox($direction: column);
       line-height: 50px;
     }
 
     a {
       position: relative;
       display: block;
-      border-bottom: 3px solid index.$supplementary-bg-color;
+      border-bottom: 3px solid abstract.$supplementary-bg-color;
       letter-spacing: 0.5px;
       padding-inline: 10px;
     }
@@ -416,10 +410,9 @@ button {
   }
 
   .colse-menu {
-    display: flex;
-    align-items: center;
+    @include abstract.flexbox($align: center);
     height: 50px;
-    border-bottom: 2px solid index.$border-bottom-color;
+    border-bottom: 2px solid abstract.$border-bottom-color;
     padding-inline: 10px;
   }
 
@@ -435,7 +428,7 @@ button {
 
   .menu-button {
     display: none;
-    color: index.$primary-color;
+    color: abstract.$primary-color;
   }
 
   .main-menu {
@@ -451,7 +444,7 @@ button {
     }
 
     i {
-      color: index.$primary-color;
+      color: abstract.$primary-color;
     }
   }
 }
