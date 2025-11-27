@@ -38,11 +38,6 @@
     font-size: 20px;
   }
 
-  .learn-more-btn a {
-    font-size: 12px;
-    padding: 12px 55px;
-  }
-
   .main-menu {
     position: fixed;
     left: -100%;
@@ -76,11 +71,6 @@
     height: 50px;
     border-bottom: 2px solid var(--border-bottom-color, #aa272f);
     padding-inline: 10px;
-  }
-
-  .colse-menu {
-    height: 50px;
-    border-bottom: 2px solid var(--border-bottom-color);
   }
 
   .secondary-list-for-mobile {

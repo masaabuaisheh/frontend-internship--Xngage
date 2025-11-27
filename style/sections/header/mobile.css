@@ -44,12 +44,6 @@
     padding-left: 0;
   }
 
-  .learn-more-btn a {
-    letter-spacing: 1.5px;
-    text-align: center;
-    padding: 12px 28px;
-  }
-
   .main-menu {
     position: fixed;
     left: -100%;
