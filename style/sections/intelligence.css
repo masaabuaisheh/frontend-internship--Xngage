@@ -36,7 +36,7 @@
 .intel-content {
   padding-top: 16px;
   line-height: 20px;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.5px;
   font-size: 15px;
 }
 
@@ -196,8 +196,6 @@
     width: 500px;
     height: auto;
     padding-bottom: 70px;
-    /* background-color: var(--supplementary-bg-color-without-opacity); */
-    background-color: #d7d3c7;
   }
 }
 

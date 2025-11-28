@@ -16,7 +16,3 @@
 @import url(sections/recently-viewed-product.css);
 @import url(sections/discover-more.css);
 @import url(sections/footer.css);
-
-@import url(responsive/mobile.css);
-@import url(responsive/tablet.css);
-@import url(responsive/desktop.css);
