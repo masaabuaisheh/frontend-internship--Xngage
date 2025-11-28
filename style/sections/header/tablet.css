@@ -95,7 +95,7 @@
   .secondary-list-for-mobile a {
     border: none !important;
     text-transform: capitalize !important;
-    font-family: "Helvetica Neue Medium", Arial, Sans-Serif;
+    font-weight: 500;
     font-weight: normal;
   }
 }

@@ -11,7 +11,6 @@
 .footer p,
 .footer li,
 .footer h4 {
-  font-family: "Helvetica Neue Regular", Arial, sans-serif;
   letter-spacing: 1px;
   color: var(--white-color);
   text-decoration: none;
@@ -28,7 +27,7 @@
 }
 
 .footer-col .footer-brand-links a {
-  font-family: "Helvetica Neue Bold", Arial, sans-serif;
+  font-weight: 700;
   font-size: 13px;
 }
 
@@ -171,10 +170,6 @@
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 30px;
-  }
-
-  .footer-col .footer-brand-links a {
-    font-family: "Helvetica Neue Regular", Arial, sans-serif;
   }
 
   .footer-middle {

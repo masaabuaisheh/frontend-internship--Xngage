@@ -7,7 +7,6 @@
 }
 
 .announcement-bar p {
-  font-family: "Helvetica Neue Regular", sans-serif;
   font-size: 15px;
   letter-spacing: 0.2px;
 }
@@ -42,7 +41,7 @@ a.announcement-link {
 .secondary-list a {
   text-decoration: none;
   color: var(--primary-color, #003150);
-  font-family: "Helvetica Neue Medium", sans-serif;
+  font-weight: 500;
   font-size: 15px;
 }
 
@@ -99,7 +98,7 @@ a.announcement-link {
   text-transform: uppercase;
   font-weight: bold;
   color: var(--primary-color, #003150);
-  font-family: "Helvetica Neue Medium", Arial, Sans-Serif;
+  font-weight: 500;
   font-size: clamp(12px, 1.2vw, 16px);
   letter-spacing: 1.5px;
   white-space: nowrap;
@@ -114,7 +113,7 @@ a.announcement-link {
   font-weight: bold;
   text-transform: uppercase;
   color: var(--primary-color, #003150);
-  font-family: "Helvetica Neue Medium", Arial, Sans-Serif;
+  font-weight: 500;
   font-size: 16px;
   letter-spacing: 2px;
   padding-right: 2px;
