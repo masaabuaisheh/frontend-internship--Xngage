@@ -1,0 +1,160 @@
+@use "../abstracts/index" as abstract;
+
+.product-sec {
+  position: relative;
+
+  .products-bg {
+    img {
+      width: 100%;
+      height: 250px;
+      display: block;
+      object-fit: cover;
+    }
+  }
+
+  .product-title {
+    @include abstract.absolute-center;
+    top: 125px;
+    text-align: center;
+    color: #000;
+    color: abstract.$white-color;
+    z-index: 2;
+
+    h2 {
+      font-size: clamp(2rem, 3vw, 4rem);
+      letter-spacing: 0.5px;
+      font-weight: 700;
+    }
+  }
+
+  .featured-categories {
+    padding-top: 60px;
+
+    &-title {
+      text-align: center;
+      font-weight: 700;
+      color: abstract.$text-color;
+      font-size: 24px;
+    }
+
+    .categories-items {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      padding-top: 40px;
+      justify-items: center;
+      align-items: center;
+
+      .category-item {
+        text-align: center;
+
+        &-img {
+          width: 200px;
+          height: 250px;
+          @include abstract.flexbox($align: center, $justify: center);
+
+          img {
+            max-width: 100%;
+            max-height: 100%;
+          }
+        }
+
+        &-link {
+          a {
+            text-decoration: none;
+            color: abstract.$primary-color;
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* Header style for mobile */
+  .container {
+    padding-inline: 24px;
+  }
+
+  .product-sec {
+    padding-top: 80px;
+
+    .product-title {
+      top: 19%;
+    }
+
+    .featured-categories {
+      padding-top: 30px;
+
+      &-title {
+        font-size: 18px;
+      }
+
+      .categories-items {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding-top: 10px;
+
+        .category-item-img {
+          width: 120px;
+          height: 140px;
+        }
+
+        .category-item-link a {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .container {
+    padding-inline: 24px;
+  }
+
+  .product-sec {
+    padding-top: 60px;
+
+    .product-title {
+      top: 17%;
+    }
+
+    .featured-categories {
+      &-title {
+        font-size: 20px;
+      }
+
+      .categories-items {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding-top: 10px;
+      }
+
+      .category-item-img {
+        height: 200px;
+        width: 150px;
+      }
+    }
+  }
+}
+
+/* Tablet / Small Laptop — 769px to 1200px */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .container {
+    padding-inline: 32px;
+  }
+
+  .product-sec {
+    .featured-categories {
+      .categories-items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+    }
+  }
+}

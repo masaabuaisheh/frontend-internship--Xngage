@@ -1,0 +1,470 @@
+@use "../abstracts/index" as abstract;
+
+.announcement-bar {
+  text-align: center;
+  background-color: abstract.$supplementary-bg-color;
+  color: abstract.$announcement-text-color;
+
+  p {
+    padding: 20px 0;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: abstract.$announcement-text-color;
+  }
+}
+
+.menu-button {
+  display: none;
+  color: abstract.$primary-color;
+}
+
+.secondary-list {
+  > div {
+    @include abstract.flexbox(
+      $align: center,
+      $justify: flex-end
+    ); // align justify
+    height: 40px;
+  }
+
+  ul {
+    li {
+      list-style-type: none;
+      display: inline;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: abstract.$primary-color;
+    font-weight: 500;
+    font-size: 15px;
+    > i {
+      color: abstract.$primary-color;
+    }
+  }
+
+  .find-rep {
+    padding-right: 28px;
+  }
+}
+
+.content {
+  box-shadow: 0 -1px 10px abstract.$primary-color-with-opacity;
+  height: auto;
+  border-bottom: 4px solid abstract.$border-bottom-color;
+
+  > div {
+    @include abstract.flexbox($align: center); // align justify
+    height: 80px;
+  }
+}
+
+.logo {
+  width: 250px;
+  height: 38px;
+  padding-right: 50px;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+  }
+}
+
+.main-menu {
+  ul {
+    @include abstract.flexbox($justify: space-between); // justify
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: abstract.$primary-color;
+    font-weight: 700;
+    font-size: clamp(12px, 1.2vw, 16px);
+    letter-spacing: 1.5px;
+    white-space: nowrap;
+  }
+}
+
+.search-button {
+  display: flex;
+  padding-left: 40px;
+
+  @include abstract.button-style;
+
+  button {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: abstract.$primary-color;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding-right: 2px;
+  }
+
+  i {
+    color: abstract.$primary-color;
+  }
+}
+
+.colse-menu {
+  display: none;
+}
+
+.secondary-list-for-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding-inline: 24px;
+  }
+
+  .announcement-bar {
+    padding: 20px 0;
+    p {
+      line-height: 25px;
+      text-align: center;
+    }
+  }
+
+  .secondary-list {
+    display: none;
+  }
+
+  .search-button {
+    button {
+      display: none;
+    }
+  }
+
+  .content {
+    > div {
+      @include abstract.flexbox(
+        $align: center,
+        $justify: space-between
+      ); // justify
+    }
+  }
+
+  .logo {
+    padding-right: 0;
+    text-align: center;
+    width: 160px;
+    height: auto;
+  }
+
+  .menu-button {
+    font-size: 20px;
+    display: block;
+  }
+
+  .search-button {
+    padding-left: 0;
+  }
+
+  .main-menu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    background: white;
+    z-index: 999;
+
+    ul {
+      @include abstract.flexbox($direction: column); // direction
+      line-height: 50px;
+    }
+
+    a {
+      position: relative;
+      display: block;
+      border-bottom: 3px solid abstract.$supplementary-bg-color;
+      letter-spacing: 0.5px;
+      padding-inline: 10px;
+    }
+  }
+
+  #menu-toggle:checked ~ .main-menu {
+    left: 0;
+  }
+
+  .colse-menu {
+    @include abstract.flexbox($align: center); // align
+    height: 50px;
+    border-bottom: 2px solid abstract.$border-bottom-color;
+    padding-inline: 10px;
+
+    i {
+      font-size: 15px;
+      color: abstract.$primary-color;
+    }
+  }
+
+  .search-button {
+    i {
+      font-size: 20px;
+      color: abstract.$primary-color;
+    }
+  }
+
+  .secondary-list-for-mobile {
+    display: block;
+
+    a {
+      border: none;
+      text-transform: capitalize;
+      font-weight: 500;
+      font-weight: normal;
+    }
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .container {
+    padding-inline: 24px;
+  }
+
+  .announcement-bar {
+    padding: 20px 0;
+    p {
+      line-height: 25px;
+      text-align: center;
+    }
+  }
+
+  .secondary-list {
+    display: none;
+  }
+
+  .search-button {
+    button {
+      display: none;
+    }
+  }
+
+  .content {
+    > div {
+      @include abstract.flexbox(
+        $align: center,
+        $justify: space-between
+      ); // justify
+    }
+  }
+
+  .logo {
+    padding-right: 0;
+  }
+
+  .menu-button {
+    font-size: 20px;
+    display: block;
+  }
+
+  .search-button {
+    padding-left: 0;
+  }
+
+  .main-menu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 70%;
+    height: 100%;
+    background: white;
+    z-index: 999;
+
+    ul {
+      @include abstract.flexbox($direction: column); // direction
+      line-height: 50px;
+    }
+
+    a {
+      position: relative;
+      display: block;
+      border-bottom: 3px solid abstract.$supplementary-bg-color;
+      letter-spacing: 0.5px;
+      padding-inline: 10px;
+    }
+  }
+
+  #menu-toggle:checked ~ .main-menu {
+    left: 0;
+  }
+
+  .colse-menu {
+    @include abstract.flexbox($align: center); // align
+    height: 50px;
+    border-bottom: 2px solid abstract.$border-bottom-color;
+    padding-inline: 10px;
+
+    i {
+      font-size: 15px;
+      color: abstract.$primary-color;
+    }
+  }
+
+  .search-button {
+    i {
+      font-size: 20px;
+      color: abstract.$primary-color;
+    }
+  }
+
+  .secondary-list-for-mobile {
+    display: block;
+
+    a {
+      border: none;
+      text-transform: capitalize;
+      font-weight: 500;
+      font-weight: normal;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    padding-inline: 32px;
+  }
+
+  .announcement-bar {
+    padding: 20px 0;
+    p {
+      line-height: 25px;
+    }
+  }
+
+  .secondary-list {
+    display: none;
+  }
+
+  .search-button {
+    button {
+      display: none;
+    }
+  }
+
+  .content {
+    > div {
+      @include abstract.flexbox(
+        $align: center,
+        $justify: space-between
+      ); // justify
+      overflow: hidden;
+    }
+  }
+
+  .logo {
+    padding-right: 0;
+    width: 200px;
+  }
+
+  .menu-button {
+    font-size: 20px;
+    display: block;
+  }
+
+  .search-button {
+    padding-left: 0;
+    font-size: 20px;
+  }
+
+  .main-menu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 70%;
+    height: 100%;
+    background: white;
+    z-index: 2000;
+
+    ul {
+      @include abstract.flexbox($direction: column);
+      line-height: 50px;
+    }
+
+    a {
+      position: relative;
+      display: block;
+      border-bottom: 3px solid abstract.$supplementary-bg-color;
+      letter-spacing: 0.5px;
+      padding-inline: 10px;
+    }
+  }
+
+  #menu-toggle:checked ~ .main-menu {
+    left: 0;
+  }
+
+  .colse-menu {
+    @include abstract.flexbox($align: center);
+    height: 50px;
+    border-bottom: 2px solid abstract.$border-bottom-color;
+    padding-inline: 10px;
+  }
+
+  .secondary-list-for-mobile {
+    display: block !important;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .container {
+    padding-inline: 32px;
+  }
+
+  .menu-button {
+    display: none;
+    color: abstract.$primary-color;
+  }
+
+  .main-menu {
+    flex: 1;
+  }
+
+  .search-button {
+    display: flex;
+    padding-left: 40px;
+
+    button {
+      display: none;
+    }
+
+    i {
+      color: abstract.$primary-color;
+    }
+  }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 2440px) {
+  .container {
+    padding-inline: 32px;
+  }
+
+  .secondary-list {
+    .find-rep {
+      padding-right: 36px;
+    }
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .main-menu {
+    flex: 1;
+  }
+}
