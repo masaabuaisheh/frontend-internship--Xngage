@@ -9,3 +9,4 @@
 @utility nav-link {
   @apply no-underline uppercase font-bold text-[#003150] tracking-[1.5px] text-[clamp(12px,1.2vw,16px)] whitespace-nowrap pr-[20px];
 }
+
