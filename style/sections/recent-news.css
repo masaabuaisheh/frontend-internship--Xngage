@@ -9,7 +9,7 @@
 
 .recent-news-header h2 {
   text-align: center;
-  font-family: "Helvetica Neue Bold", Arial, sans-serif;
+  font-weight: 700;
   color: var(--text-color, #1f1f1f);
   font-size: 28px;
 }
@@ -17,7 +17,7 @@
 .recent-news-header a {
   text-decoration: none;
   color: #6d6d6d;
-  font-family: "Helvetica Neue Medium", Arial, sans-serif;
+  font-weight: 500;
   font-size: 15px;
   letter-spacing: 0.5px;
   display: block;
@@ -53,7 +53,6 @@
 
 .news-card-title {
   padding: 20px 0 10px 0;
-  font-family: "Helvetica Neue Regular", Arial, sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
   line-height: 25px;
@@ -64,7 +63,6 @@
 }
 
 .news-card-desc {
-  font-family: "Helvetica Neue Regular", Arial, sans-serif;
   --max-lines: 3;
   display: -webkit-box; /* layout for text-clamping */
   overflow: hidden;
@@ -83,7 +81,7 @@
 .news-link a {
   text-decoration: none;
   color: var(--primary-color, #003150);
-  font-family: "Helvetica Neue Medium", Arial, sans-serif;
+  font-weight: 500;
   font-size: 15px;
   letter-spacing: 0.5px;
 }

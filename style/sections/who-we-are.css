@@ -9,7 +9,7 @@
 .title {
   padding-right: 40px;
   white-space: nowrap;
-  font-family: "Helvetica Neue Medium", Arial, sans-serif;
+  font-weight: 500;
 }
 
 .br-desktop {
@@ -27,7 +27,6 @@
 
 .info p {
   letter-spacing: 1px;
-  font-family: "Helvetica Neue Regular", Arial, sans-serif;
 }
 
 .info::before {
@@ -72,7 +71,6 @@
 
 .adv p {
   padding-bottom: 10px;
-  font-family: "Helvetica Neue Regular", Arial, sans-serif;
   font-size: 15px;
 }
 
@@ -80,7 +78,6 @@
   text-decoration: none;
   color: var(--white-color);
   font-size: 12px;
-  font-family: "Helvetica Neue Regular", Arial, sans-serif;
 }
 
 .adv i {
