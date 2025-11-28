@@ -14,8 +14,6 @@
 .intel-section {
   position: absolute;
   width: 410px;
-  /* height: 280px; */
-  /* background-color: var(--supplementary-bg-color-without-opacity); */
   padding: 40px 60px;
   z-index: 999;
   word-break: keep-all;

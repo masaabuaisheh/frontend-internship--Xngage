@@ -1,4 +1,4 @@
-/* hero section */
+/* 
 .hero {
   position: relative;
   width: 100%;
@@ -30,7 +30,6 @@
 .hero-content h1 {
   font-size: clamp(2rem, 3vw, 4rem);
   letter-spacing: 0.5px;
-  /* line-height: 60px; */
   font-family: "Helvetica Neue Bold", Arial, Sans-Serif;
   padding-bottom: 30px;
 }
@@ -63,4 +62,4 @@ button {
   .learn-more-btn {
     padding: 11px 40px;
   }
-}
+} */

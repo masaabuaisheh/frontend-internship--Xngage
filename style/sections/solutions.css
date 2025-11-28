@@ -1,4 +1,4 @@
-.sol-section {
+/* .sol-section {
   padding-top: 100px;
 }
 
@@ -123,13 +123,13 @@ p.sec-label {
 }
 
 @media screen and (max-width: 576px) {
-  /* Header style for mobile */
+
   .container {
     padding-inline: 24px;
   }
 
   .sol-section {
-    /* Top shadow + bottom shadow */
+
     box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2), 0 4px 12px rgba(0, 0, 0, 0.2);
   }
 
@@ -158,17 +158,17 @@ p.sec-label {
   .sol-item-content p,
   .sol-item-content-reverse p {
     --max-lines: 2;
-    display: -webkit-box; /* layout for text-clamping */
+    display: -webkit-box;  
     overflow: hidden;
-    -webkit-box-orient: vertical; /* box layout from top to bottom */
+    -webkit-box-orient: vertical;
     -webkit-line-clamp: var(
       --max-lines
-    ); /* show max-lines then cut the rest (add ...)*/
+    ); 
     line-clamp: 2;
   }
 }
 
-/* Header style for tablet */
+
 @media screen and (min-width: 577px) and (max-width: 768px) {
   .container {
     padding-inline: 24px;
@@ -199,17 +199,17 @@ p.sec-label {
   .sol-item-content p,
   .sol-item-content-reverse p {
     --max-lines: 2;
-    display: -webkit-box; /* layout for text-clamping */
+    display: -webkit-box;
     overflow: hidden;
-    -webkit-box-orient: vertical; /* box layout from top to bottom */
+    -webkit-box-orient: vertical;
     -webkit-line-clamp: var(
       --max-lines
-    ); /* show max-lines then cut the rest (add ...)*/
+    );
     line-clamp: 2;
   }
 }
 
-/* Tablet / Small Laptop — 769px to 1200px */
+
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .container {
     padding-inline: 32px;
@@ -222,12 +222,12 @@ p.sec-label {
   .sol-item-content p,
   .sol-item-content-reverse p {
     --max-lines: 2;
-    display: -webkit-box; /* layout for text-clamping */
+    display: -webkit-box; 
     overflow: hidden;
-    -webkit-box-orient: vertical; /* box layout from top to bottom */
+    -webkit-box-orient: vertical; 
     -webkit-line-clamp: var(
       --max-lines
-    ); /* show max-lines then cut the rest (add ...)*/
+    ); 
     line-clamp: 2;
   }
-}
+} */

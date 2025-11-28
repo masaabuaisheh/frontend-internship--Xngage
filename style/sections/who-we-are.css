@@ -1,4 +1,4 @@
-.who-we-are {
+/* .who-we-are {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,10 +50,7 @@
   line-height: 23px;
   height: auto;
   padding: 22px 30px 22px 30px;
-  /* background-image: url(../../assets/image/two-hands--removebg-preview.png);
-  background-repeat: no-repeat;
-  background-size: 150px;
-  background-position: bottom right; */
+
 }
 
 .adv::after {
@@ -188,4 +185,4 @@
   .br-desktop {
     display: inline;
   }
-}
+} */
