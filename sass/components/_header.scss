@@ -7,7 +7,7 @@
 
   p {
     padding: 20px 0;
-    font-family: "Helvetica Neue Regular", sans-serif;
+    font-weight: 400;
     font-size: 15px;
     letter-spacing: 0.2px;
   }
@@ -44,7 +44,7 @@
   a {
     text-decoration: none;
     color: abstract.$primary-color;
-    font-family: "Helvetica Neue Medium", sans-serif;
+    font-weight: 500;
     font-size: 15px;
     > i {
       color: abstract.$primary-color;
@@ -90,7 +90,7 @@
     text-transform: uppercase;
     font-weight: bold;
     color: abstract.$primary-color;
-    font-family: "Helvetica Neue Medium", Arial, Sans-Serif;
+    font-weight: 700;
     font-size: clamp(12px, 1.2vw, 16px);
     letter-spacing: 1.5px;
     white-space: nowrap;
@@ -107,7 +107,7 @@
     font-weight: bold;
     text-transform: uppercase;
     color: abstract.$primary-color;
-    font-family: "Helvetica Neue Medium", Arial, Sans-Serif;
+    font-weight: 700;
     font-size: 16px;
     letter-spacing: 2px;
     padding-right: 2px;
@@ -226,7 +226,7 @@
     a {
       border: none;
       text-transform: capitalize;
-      font-family: "Helvetica Neue Medium", Arial, Sans-Serif;
+      font-weight: 500;
       font-weight: normal;
     }
   }
@@ -329,7 +329,7 @@
     a {
       border: none;
       text-transform: capitalize;
-      font-family: "Helvetica Neue Medium", Arial, Sans-Serif;
+      font-weight: 500;
       font-weight: normal;
     }
   }

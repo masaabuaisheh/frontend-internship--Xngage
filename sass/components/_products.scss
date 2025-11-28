@@ -23,7 +23,7 @@
     h2 {
       font-size: clamp(2rem, 3vw, 4rem);
       letter-spacing: 0.5px;
-      font-family: "Helvetica Neue Bold", Arial, Sans-Serif;
+      font-weight: 700;
     }
   }
 
@@ -32,7 +32,7 @@
 
     &-title {
       text-align: center;
-      font-family: "Helvetica Neue Bold", Arial, sans-serif;
+      font-weight: 700;
       color: abstract.$text-color;
       font-size: 24px;
     }
@@ -62,7 +62,7 @@
           a {
             text-decoration: none;
             color: abstract.$primary-color;
-            font-family: "Helvetica Neue Medium", Arial, sans-serif;
+            font-weight: 500;
             font-size: 14px;
             letter-spacing: 0.5px;
             text-align: center;

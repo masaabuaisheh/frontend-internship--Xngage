@@ -28,20 +28,3 @@
   align-items: $align;
   justify-content: $justify;
 }
-
-@mixin horizontal-line(
-  $top: 0,
-  $left: 0,
-  $width: 1px,
-  $height: 1px,
-  $color: black
-) {
-  content: "";
-  display: block;
-  position: absolute;
-  top: $top;
-  left: $left;
-  width: $width;
-  height: $height;
-  background-color: $color;
-}

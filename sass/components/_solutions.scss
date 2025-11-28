@@ -5,7 +5,7 @@
 
   .sol-title {
     text-align: center;
-    font-family: "Helvetica Neue Bold", Arial, sans-serif;
+    font-weight: 800;
     color: abstract.$text-color;
     font-size: 28px;
   }
@@ -21,15 +21,13 @@
 
       h3 {
         padding-top: 20px;
-        font-family: "Helvetica Neue Medium", Arial, sans-serif;
+        font-weight: 500;
         color: abstract.$text-color;
         font-size: clamp(20px, 3vw, 35px);
-        font-weight: normal;
       }
 
       p:not(.sec-label) {
         padding-top: 20px;
-        font-family: "Helvetica Neue Regular", Arial, sans-serif;
         color: abstract.$text-color;
         letter-spacing: 1px;
         font-size: 14px;
@@ -37,49 +35,41 @@
       }
     }
 
-    .sec-label {
-      color: abstract.$supplementary-text-color;
-      font-family: "Helvetica Neue Regular", Arial, sans-serif;
-      text-transform: uppercase;
-      position: relative;
-      padding-bottom: 20px;
-      letter-spacing: 1px;
-      font-size: 13px;
-
-      &::after {
-        @include abstract.horizontal-line(
-          $top: 20px,
-          $width: 25px,
-          $height: 2px,
-          $color: #afafaf
-        );
-      }
-      &:hover::after {
-        animation: shrink-grow 0.6s ease-out forwards;
-      }
-      @keyframes shrink-grow {
-        0% {
-          width: 25px;
-        }
-        40% {
-          width: 0;
-        }
-        60% {
-          width: 0;
-        }
-        100% {
-          width: 100%;
-        }
-      }
-    }
-
     .cta {
       padding-top: 30px;
       text-decoration: none;
       color: abstract.$primary-color;
-      font-family: "Helvetica Neue Medium", Arial, sans-serif;
+      font-weight: 500;
       font-size: 14px;
       letter-spacing: 0.5px;
+    }
+  }
+
+  .sec-label {
+    color: abstract.$supplementary-text-color;
+
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 12px;
+    letter-spacing: 1px;
+    font-size: 13px;
+
+    &:hover::after {
+      animation: shrink-grow 0.6s ease-out forwards;
+    }
+    @keyframes shrink-grow {
+      0% {
+        width: 25px;
+      }
+      40% {
+        width: 0;
+      }
+      60% {
+        width: 0;
+      }
+      100% {
+        width: 100%;
+      }
     }
   }
 
@@ -94,15 +84,13 @@
 
       h3 {
         padding-top: 20px;
-        font-family: "Helvetica Neue Medium", Arial, sans-serif;
+        font-weight: 500;
         color: abstract.$text-color;
         font-size: clamp(20px, 3vw, 35px);
-        font-weight: normal;
       }
 
       p:not(.sec-label) {
         padding-top: 20px;
-        font-family: "Helvetica Neue Regular", Arial, sans-serif;
         color: abstract.$text-color;
         letter-spacing: 1px;
         font-size: 14px;
@@ -118,7 +106,7 @@
       padding-top: 30px;
       text-decoration: none;
       color: abstract.$primary-color;
-      font-family: "Helvetica Neue Medium", Arial, sans-serif;
+      font-weight: 500;
       font-size: 14px;
       letter-spacing: 0.5px;
     }
