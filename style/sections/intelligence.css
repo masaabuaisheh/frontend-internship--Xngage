@@ -22,15 +22,15 @@
 }
 
 .prometha {
-  font-weight: 500;
+  font-weight: 600;
   color: var(--primary-color, #003150);
-  padding: 22px 0;
+  padding: 22px 0 40px 0;
 }
 
 .intel-title {
   width: auto;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .intel-content {

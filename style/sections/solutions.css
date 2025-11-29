@@ -20,7 +20,8 @@
   flex-direction: column;
   justify-content: center;
   padding-right: 100px;
-  width: 510px;
+  /* min-width: 510px; */
+  flex: 0.6;
 }
 
 .sol-item-image {
@@ -110,8 +111,9 @@ p.sec-label {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 40px;
-  width: 510px;
+  padding-left: 10px;
+  /* width: 510px; */
+  flex: 0.6;
 }
 
 .last-image {
