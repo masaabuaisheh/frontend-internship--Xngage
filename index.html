@@ -6,9 +6,19 @@
     <link rel="stylesheet" href="style/main.css" />
     <!-- <link rel="stylesheet" href="output.css" /> -->
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
+    <!-- Link SwiperJS CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Link SwiperJS JS-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script defer type="module" src="/js/main.js"></script>
     <title>MyStore Demo</title>
   </head>
   <body>
+    <div id="overlay"></div>
     <!-- Header section -->
     <header>
       <!-- Announcement Bar section -->
@@ -247,103 +257,111 @@
       </section>
       <!-- Recent News -->
       <section>
-        <div class="container recent-news">
+        <div class="container recent-news swiper">
           <div class="recent-news-header">
             <h2>Recent News</h2>
-            <a href="javascript:void(0);">View All News &rarr;</a>
+            <a href="./html/recentNews.html">View All News &rarr;</a>
           </div>
           <div class="news-cards">
-            <!-- Card 1 -->
-            <div class="new-card">
-              <div class="news-card-image">
-                <img
-                  src="./assets/image/IoT.png"
-                  alt=" Desperate Times Call for Innovative IoT Boiler Monitoring
+            <div class="swiper-wrapper">
+              <!--Static news cards were replaced with dynamic rendering from the API -->
+              <!-- <div class="new-card swiper-slide">
+                <div class="news-card-image">
+                  <img
+                    src="./assets/image/IoT.png"
+                    alt=" Desperate Times Call for Innovative IoT Boiler Monitoring
                   Measures"
-                  loading="lazy"
-                />
+                    loading="lazy"
+                  />
+                </div>
+                <div class="news-card-title">
+                  <h3>
+                    Desperate Times Call for Innovative IoT Boiler Monitoring
+                    Measures
+                  </h3>
+                </div>
+                <div class="news-card-desc">
+                  <p>
+                    As we navigate these unchartered waters together, smart
+                    technology can help keep critical systems operational to
+                    ensure that companies stay up and running. Functions such as
+                    remote boiler monitoring, fault alerts, dashboard reporting,
+                    and system insights can help identify issues before they
+                    become critical, allowing maintenance teams to stay informed
+                    and respond quickly.
+                  </p>
+                </div>
+                <div class="news-link">
+                  <a href="javascript:void(0);">Read More &rarr;</a>
+                </div>
               </div>
-              <div class="news-card-title">
-                <h3>
-                  Desperate Times Call for Innovative IoT Boiler Monitoring
-                  Measures
-                </h3>
+              <div class="new-card swiper-slide">
+                <div class="news-card-image">
+                  <img
+                    src="./assets/image/covid19.png"
+                    alt="COVID-19 Pandemic"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="news-card-title">
+                  <h3>Our Commitment to Customers During COVID-19 Pandemic</h3>
+                </div>
+                <div class="news-card-desc">
+                  <p>
+                    With the rest of the world, Cleaver-Brooks is monitoring the
+                    COVID-19 (Coronavirus) situation very closely. As the safety
+                    of our employees and their families remain our top priority,
+                    we are working diligently to support our customers who
+                    provide essential services. We remain committed to offering
+                    reliable information and assistance as the situation
+                    continues to evolve.
+                  </p>
+                </div>
+                <div class="news-link">
+                  <a href="javascript:void(0);">Read More &rarr;</a>
+                </div>
               </div>
-              <div class="news-card-desc">
-                <p>
-                  As we navigate these unchartered waters together, smart
-                  technology can help keep critical systems operational to
-                  ensure that companies stay up and running. Functions such as
-                  remote boiler monitoring, fault alerts, dashboard reporting,
-                  and system insights can help identify issues before they
-                  become critical, allowing maintenance teams to stay informed
-                  and respond quickly.
-                </p>
-              </div>
-              <div class="news-link">
-                <a href="javascript:void(0);">Reard More &rarr;</a>
-              </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="new-card">
-              <div class="news-card-image">
-                <img
-                  src="./assets/image/covid19.png"
-                  alt="COVID-19 Pandemic"
-                  loading="lazy"
-                />
-              </div>
-              <div class="news-card-title">
-                <h3>Our Commitment to Customers During COVID-19 Pandemic</h3>
-              </div>
-              <div class="news-card-desc">
-                <p>
-                  With the rest of the world, Cleaver-Brooks is monitoring the
-                  COVID-19 (Coronavirus) situation very closely. As the safety
-                  of our employees and their families remain our top priority,
-                  we are working diligently to support our customers who provide
-                  essential services. We remain committed to offering reliable
-                  information and assistance as the situation continues to
-                  evolve.
-                </p>
-              </div>
-              <div class="news-link">
-                <a href="javascript:void(0);">Reard More &rarr;</a>
-              </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="new-card">
-              <div class="news-card-image">
-                <img
-                  src="./assets/image/CleaverBrooks.jpg"
-                  alt="Cleaver Brooks"
-                  loading="lazy"
-                />
-              </div>
-              <div class="news-card-title">
-                <h3>
-                  ClearFire®-CE Condensing Boiler - Most Valuable Product of the
-                  Year
-                </h3>
-              </div>
-              <div class="news-card-desc">
-                <p>
-                  The Cleaver-Brooks ClearFire®-CE (CFC-E) fully condensing
-                  hydronic boiler is the Most Valuable Product of 2019 according
-                  to Consulting-Specifying Engineer. The product was selected
-                  for its superior performance, high efficiency, advanced
-                  controls, and ease of installation, making it an ideal
-                  solution for a wide range of commercial applications.
-                </p>
-              </div>
-              <div class="news-link">
-                <a href="javascript:void(0);">Reard More &rarr;</a>
-              </div>
+              <div class="new-card swiper-slide">
+                <div class="news-card-image">
+                  <img
+                    src="./assets/image/CleaverBrooks.jpg"
+                    alt="Cleaver Brooks"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="news-card-title">
+                  <h3>
+                    ClearFire®-CE Condensing Boiler - Most Valuable Product of
+                    the Year
+                  </h3>
+                </div>
+                <div class="news-card-desc">
+                  <p>
+                    The Cleaver-Brooks ClearFire®-CE (CFC-E) fully condensing
+                    hydronic boiler is the Most Valuable Product of 2019
+                    according to Consulting-Specifying Engineer. The product was
+                    selected for its superior performance, high efficiency,
+                    advanced controls, and ease of installation, making it an
+                    ideal solution for a wide range of commercial applications.
+                  </p>
+                </div>
+                <div class="news-link">
+                  <a href="javascript:void(0);">Read More &rarr;</a>
+                </div>
+              </div> -->
             </div>
           </div>
+
+          <!-- <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> -->
+
           <div class="slider">
-            <a class="prev"><i class="fa-solid fa-arrow-left"></i></a>
-            <a class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a class="prev swiper-button-prev"
+              ><i class="fa-solid fa-arrow-left"></i
+            ></a>
+            <a class="next swiper-button-next"
+              ><i class="fa-solid fa-arrow-right"></i
+            ></a>
           </div>
         </div>
       </section>
@@ -483,111 +501,137 @@
       </section>
       <!-- Recently viewed Products -->
       <section>
-        <div class="container recently-viewed">
+        <div class="container recently-viewed swiper">
           <h2 class="recently-viewed-title">Recently Viewed Products</h2>
           <div class="viewed-products">
-            <!-- product 1 -->
-            <div class="viewed-product">
-              <div class="product-img">
-                <img
-                  src="./assets/image/boiler.jpg"
-                  alt="Boiler image"
-                  loading="lazy"
-                />
-              </div>
-              <div class="product-content">
-                <div class="product-name">
-                  <h3>CBEX Dryback Elite</h3>
+            <div class="viewe swiper-wrapper">
+              <!-- <div class="viewed-product swiper-slide">
+                <div class="product-img">
+                  <img
+                    src="./assets/image/boiler.jpg"
+                    alt="Boiler image"
+                    loading="lazy"
+                  />
                 </div>
-                <div class="cp-part">
-                  <h4>CB Part #:</h4>
-                  <p>4268902</p>
+                <div class="product-content">
+                  <div class="product-name">
+                    <h3>CBEX Dryback Elite</h3>
+                  </div>
+                  <div class="cp-part">
+                    <h4>CB Part #:</h4>
+                    <p>4268902</p>
+                  </div>
+                  <div class="view-details-btn">
+                    <button type="button">View Details</button>
+                  </div>
                 </div>
-                <div class="view-details-btn">
-                  <button type="button">View Details</button>
+                <div class="product-badge">
+                  <p>Near-Perfect Combustion</p>
                 </div>
               </div>
-              <div class="product-badge">
-                <p>Near-Perfect Combustion</p>
+              <div class="viewed-product swiper-slide">
+                <div class="product-img">
+                  <img
+                    src="./assets/image/cbex.png"
+                    alt="CBEX Elite"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="product-content">
+                  <div class="product-name">
+                    <h3>CBEX Elite (1,300-2,200 HP)</h3>
+                  </div>
+                  <div class="cp-part">
+                    <h4>CB Part #:</h4>
+                    <p>42613431</p>
+                  </div>
+                  <div class="view-details-btn">
+                    <button type="button">View Details</button>
+                  </div>
+                </div>
+                <div class="product-badge">
+                  <p>Large Capacity</p>
+                </div>
               </div>
+              <div class="viewed-product swiper-slide">
+                <div class="product-img">
+                  <img
+                    src="./assets/image/cfc.jpeg"
+                    alt="ClearFire®-CE"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="product-content">
+                  <div class="product-name">
+                    <h3>ClearFire®-CE</h3>
+                  </div>
+                  <div class="cp-part">
+                    <h4>CB Part #:</h4>
+                    <p>12343692</p>
+                  </div>
+                  <div class="view-details-btn">
+                    <button type="button">View Details</button>
+                  </div>
+                </div>
+                <div class="product-badge">
+                  <p>Fully Condensing</p>
+                </div>
+              </div>
+              <div class="viewed-product swiper-slide">
+                <div class="product-img">
+                  <img
+                    src="./assets/image/ClearFire-LC.jpg"
+                    alt="ClearFire®-LC"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="product-content">
+                  <div class="product-name">
+                    <h3>ClearFire®-LC</h3>
+                  </div>
+                  <div class="cp-part">
+                    <h4>CB Part #:</h4>
+                    <p>4268902</p>
+                  </div>
+                  <div class="view-details-btn">
+                    <button type="button">View Details</button>
+                  </div>
+                </div>
+                <div class="product-badge">
+                  <p>Large Capacity</p>
+                </div>
+              </div>
+              <div class="viewed-product swiper-slide">
+                <div class="product-img">
+                  <img
+                    src="./assets/image/ClearFire-LC.jpg"
+                    alt="ClearFire®-LC"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="product-content">
+                  <div class="product-name">
+                    <h3>ClearFire®-LC</h3>
+                  </div>
+                  <div class="cp-part">
+                    <h4>CB Part #:</h4>
+                    <p>4268902</p>
+                  </div>
+                  <div class="view-details-btn">
+                    <button type="button">View Details</button>
+                  </div>
+                </div>
+                <div class="product-badge">
+                  <p>Large Capacity</p>
+                </div>
+              </div> -->
             </div>
-            <!-- product 2 -->
-            <div class="viewed-product">
-              <div class="product-img">
-                <img
-                  src="./assets/image/cbex.png"
-                  alt="CBEX Elite"
-                  loading="lazy"
-                />
-              </div>
-              <div class="product-content">
-                <div class="product-name">
-                  <h3>CBEX Elite (1,300-2,200 HP)</h3>
-                </div>
-                <div class="cp-part">
-                  <h4>CB Part #:</h4>
-                  <p>42613431</p>
-                </div>
-                <div class="view-details-btn">
-                  <button type="button">View Details</button>
-                </div>
-              </div>
-              <div class="product-badge">
-                <p>Large Capacity</p>
-              </div>
-            </div>
-            <!-- product 3 -->
-            <div class="viewed-product">
-              <div class="product-img">
-                <img
-                  src="./assets/image/cfc.jpeg"
-                  alt="ClearFire®-CE"
-                  loading="lazy"
-                />
-              </div>
-              <div class="product-content">
-                <div class="product-name">
-                  <h3>ClearFire®-CE</h3>
-                </div>
-                <div class="cp-part">
-                  <h4>CB Part #:</h4>
-                  <p>12343692</p>
-                </div>
-                <div class="view-details-btn">
-                  <button type="button">View Details</button>
-                </div>
-              </div>
-              <div class="product-badge">
-                <p>Fully Condensing</p>
-              </div>
-            </div>
-            <!-- product 4 -->
-            <div class="viewed-product">
-              <div class="product-img">
-                <img
-                  src="./assets/image/ClearFire-LC.jpg"
-                  alt="ClearFire®-LC"
-                  loading="lazy"
-                />
-              </div>
-              <div class="product-content">
-                <div class="product-name">
-                  <h3>ClearFire®-LC</h3>
-                </div>
-                <div class="cp-part">
-                  <h4>CB Part #:</h4>
-                  <p>4268902</p>
-                </div>
-                <div class="view-details-btn">
-                  <button type="button">View Details</button>
-                </div>
-              </div>
-              <div class="product-badge">
-                <p>Large Capacity</p>
-              </div>
-            </div>
-            <a class="pro-prev"><i class="fa-solid fa-arrow-left"></i></a>
-            <a class="pro-next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a class="pro-prev swiper-button-prev"
+              ><i class="fa-solid fa-arrow-left"></i
+            ></a>
+            <a class="pro-next swiper-button-next"
+              ><i class="fa-solid fa-arrow-right"></i
+            ></a>
           </div>
         </div>
       </section>
@@ -646,7 +690,6 @@
       </section>
     </main>
     <!-- Footer -->
-
     <footer class="footer">
       <div class="container">
         <div class="footer-col footer-brand">
@@ -725,7 +768,9 @@
             ></span>
           </div>
           <ul>
-            <li><a href="javascript:void(0);">Contact Us</a></li>
+            <li>
+              <a href="javascript:void(0);" class="openContactUs">Contact Us</a>
+            </li>
             <li><a href="javascript:void(0);">Locations & Hours</a></li>
             <li><a href="javascript:void(0);">Events</a></li>
           </ul>
@@ -782,6 +827,43 @@
             <a class="privacy" href="javascript:void(0);">Privacy Policy</a>
           </div>
         </div>
+      </div>
+
+      <div class="contact-form-container" id="contact-form">
+        <h2>CONTACT US</h2>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" />
+            <span class="error-message" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="example@email.com"
+            />
+            <span class="error-message" id="emailError">vv</span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your Message"
+              rows="5"
+            ></textarea>
+            <span class="error-message" id="messageError"></span>
+          </div>
+          <div class="btns">
+            <button type="submit" class="submit-button" id="submit-btn">
+              Send Message
+            </button>
+            <button type="button" class="close-button">Close</button>
+          </div>
+        </form>
       </div>
     </footer>
   </body>
