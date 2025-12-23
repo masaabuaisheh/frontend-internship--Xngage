@@ -10,10 +10,9 @@ import { initScrollListener } from "./services/scrollService.js";
 
 import { Popup } from "./services/popupService.js";
 
-import { contactUs } from "./services/contactUS.js";
+import { contactUs } from "./services/contactUs.js";
 import { formValidations } from "./services/formValidations.js";
 
-// import Swiper from "https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs";
 
 import { swiperNewItems } from "./services/swiper.js";
 import { swiperRecentlyNews } from "./services/swiper.js";

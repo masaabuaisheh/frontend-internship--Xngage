@@ -1,10 +1,10 @@
 const submitBtn = document.getElementById("contactForm");
 const modal = document.querySelector(".contact-form-container");
 const overlay = document.getElementById("overlay");
+const errorElements = document.querySelectorAll(".error-message");
 
 export function formValidations() {
   submitBtn.addEventListener("submit", (event) => {
-    const errorElements = document.querySelectorAll(".error-message");
     const name = document.getElementById("name").value.trim();
     const email = document.getElementById("email").value.trim();
     const message = document.getElementById("message").value.trim();

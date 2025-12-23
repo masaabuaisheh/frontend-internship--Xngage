@@ -1,40 +1,44 @@
-const searchButton = document.querySelector(".search-button");
-const search = document.querySelector(".search-button i");
-const searchForm = document.querySelector(".search-form form");
-const flexForm = document.querySelector(".search-form");
-const searchField = document.getElementById("search-input");
-const button1 = document.querySelector(".search-btn1");
-const button = document.querySelector(".search-btn");
-const closeBtn = document.querySelector(".close-btn");
+import {
+  searchButton,
+  searchIcon,
+  searchForm,
+  buttonPrimary,
+  buttonSearch,
+  closeBtn,
+  searchField,
+} from "../domElements.js";
 
-console.log(searchForm);
+import { fetchRecentNews, fetchNewsQuery } from "../api/jqueryApi.js";
+
+// console.log(searchForm);
 
 searchButton.addEventListener("click", () => {
-  search.style.display = "none";
+  searchIcon.style.display = "none";
   searchForm.style.display = "block";
-  button.style.display = "none";
-  button1.style.display = "block";
-  button1.style.padding = "10px 20px";
-  button1.style.border = "1px solid #003150";
-  button1.style.borderRadius = "5px";
+  buttonPrimary.style.display = "none";
+  buttonSearch.style.display = "block";
+  buttonSearch.style.padding = "10px 20px";
+  buttonSearch.style.border = "1px solid #003150";
+  buttonSearch.style.borderRadius = "5px";
   closeBtn.style.display = "block";
 });
 
 closeBtn.addEventListener("click", () => {
   searchForm.style.display = "none";
-  search.style.display = "block";
-  button1.style.display = "none";
-  button.style.display = "block";
+  searchIcon.style.display = "block";
+  buttonSearch.style.display = "none";
+  buttonPrimary.style.display = "block";
   closeBtn.style.display = "none";
   initData();
 });
 
-button1.addEventListener("click", async () => {
+buttonSearch.addEventListener("click", async () => {
   const query = searchField.value.trim();
 
   if (query == "") {
     initData();
   }
+  
   if (query !== "") {
     try {
       const news = await fetchNewsQuery(query);
@@ -44,31 +48,6 @@ button1.addEventListener("click", async () => {
     }
   }
 });
-
-//  News Search
-function fetchNewsQuery(query) {
-  return new Promise((resolve, reject) => {
-    $.ajax({
-      url: `https://newsdata.io/api/1/latest?apikey=pub_8777d81f07194323b6a7a289400a7cd3&q=ecommerce+${query}`,
-      type: "GET",
-      success: (data) => {
-        resolve(data.results);
-      },
-      error: (err) => reject(err),
-    });
-  });
-}
-
-function fetchRecentNews() {
-  return new Promise((resolve, reject) => {
-    $.ajax({
-      url: "https://newsdata.io/api/1/latest?apikey=pub_8777d81f07194323b6a7a289400a7cd3&q=ecommerce",
-      type: "GET",
-      success: (data) => resolve(data.results),
-      error: (err) => reject(err),
-    });
-  });
-}
 
 function renderNews(posts) {
   const container = document.querySelector(".news-cards");
