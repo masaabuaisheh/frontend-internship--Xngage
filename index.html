@@ -20,11 +20,11 @@
       src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"
       defer
     ></script>
-    <script type="module" src="js/main.js"></script>
+    <script type="module" src="scripts/main.js"></script>
     <title>MyStore Demo</title>
   </head>
   <body>
-    <div id="overlay"></div>
+    <!-- <div id="overlay"></div> -->
     <!-- Header section -->
     <header>
       <!-- Announcement Bar section -->
@@ -77,7 +77,7 @@
           <!-- Main menu -->
           <nav class="main-menu">
             <div class="colse-menu">
-              <label for="menu-toggle" class="close-button">
+              <label for="menu-toggle" class="close-button" id="close-button">
                 <i class="fa-solid fa-x"></i>
               </label>
             </div>
@@ -266,10 +266,10 @@
         <div class="container recent-news swiper">
           <div class="recent-news-header">
             <h2>Recent News</h2>
-            <a href="./html/recentNews.html">View All News &rarr;</a>
+            <a href="./views/pages/allNews.html">View All News &rarr;</a>
           </div>
           <div class="news-cards">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper" id="recent-news-wrapper">
               <!--Static news cards were replaced with dynamic rendering from the API -->
               <!-- <div class="new-card swiper-slide">
                 <div class="news-card-image">
@@ -506,8 +506,8 @@
         <div class="container recently-viewed swiper">
           <h2 class="recently-viewed-title">Recently Viewed Products</h2>
           <div class="viewed-products">
-            <div class="viewe swiper-wrapper">
-              <!-- <div class="viewed-product swiper-slide">
+            <div class="swiper-wrapper" id="viewed-products-wrapper">
+              <!-- <div class="viewed-product">
                 <div class="product-img">
                   <img
                     src="./assets/image/boiler.jpg"
@@ -531,7 +531,7 @@
                   <p>Near-Perfect Combustion</p>
                 </div>
               </div>
-              <div class="viewed-product swiper-slide">
+              <div class="viewed-product">
                 <div class="product-img">
                   <img
                     src="./assets/image/cbex.png"
@@ -555,7 +555,7 @@
                   <p>Large Capacity</p>
                 </div>
               </div>
-              <div class="viewed-product swiper-slide">
+              <div class="viewed-product">
                 <div class="product-img">
                   <img
                     src="./assets/image/cfc.jpeg"
@@ -579,31 +579,7 @@
                   <p>Fully Condensing</p>
                 </div>
               </div>
-              <div class="viewed-product swiper-slide">
-                <div class="product-img">
-                  <img
-                    src="./assets/image/ClearFire-LC.jpg"
-                    alt="ClearFire®-LC"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="product-content">
-                  <div class="product-name">
-                    <h3>ClearFire®-LC</h3>
-                  </div>
-                  <div class="cp-part">
-                    <h4>CB Part #:</h4>
-                    <p>4268902</p>
-                  </div>
-                  <div class="view-details-btn">
-                    <button type="button">View Details</button>
-                  </div>
-                </div>
-                <div class="product-badge">
-                  <p>Large Capacity</p>
-                </div>
-              </div>
-              <div class="viewed-product swiper-slide">
+              <div class="viewed-product">
                 <div class="product-img">
                   <img
                     src="./assets/image/ClearFire-LC.jpg"
@@ -628,6 +604,8 @@
                 </div>
               </div> -->
             </div>
+          </div>
+          <div class="slider">
             <a class="pro-prev swiper-button-prev"
               ><i class="fa-solid fa-arrow-left"></i
             ></a>
@@ -773,7 +751,9 @@
             <li>
               <a href="javascript:void(0);" class="openContactUs">Contact Us</a>
             </li>
-            <li><a href="javascript:void(0);">Locations & Hours</a></li>
+            <li>
+              <a href="javascript:void(0);" class="cc">Locations & Hours</a>
+            </li>
             <li><a href="javascript:void(0);">Events</a></li>
           </ul>
           <ul class="social">
@@ -829,43 +809,6 @@
             <a class="privacy" href="javascript:void(0);">Privacy Policy</a>
           </div>
         </div>
-      </div>
-
-      <div class="contact-form-container" id="contact-form">
-        <h2>CONTACT US</h2>
-        <form id="contactForm">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" />
-            <span class="error-message" id="nameError"></span>
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input
-              type="text"
-              id="email"
-              name="email"
-              placeholder="example@email.com"
-            />
-            <span class="error-message" id="emailError">vv</span>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Your Message"
-              rows="5"
-            ></textarea>
-            <span class="error-message" id="messageError"></span>
-          </div>
-          <div class="btns">
-            <button type="submit" class="submit-button" id="submit-btn">
-              Send Message
-            </button>
-            <button type="button" class="close-button">Close</button>
-          </div>
-        </form>
       </div>
     </footer>
   </body>

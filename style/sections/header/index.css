@@ -117,10 +117,6 @@ a.announcement-link {
   padding-right: 2px;
 }
 
-.search-button i {
-  color: var(--primary-color, #003150);
-}
-
 .search-form form {
   display: none;
   width: 70%;
@@ -146,14 +142,49 @@ a.announcement-link {
   display: none;
 }
 
+.close-btn i {
+  color: #003150;
+}
+
+.search-form form {
+  display: none;
+}
+
+.search-submit {
+  display: none;
+}
+
 .close-btn {
   display: none;
   padding: 24px 0 0 20px;
   cursor: pointer;
 }
 
-.close-btn i {
+.search-button i {
   color: #003150;
+}
+
+.search-active .search-form form {
+  display: block;
+}
+
+.search-active .search-btn {
+  display: none;
+}
+
+.search-active .search-submit {
+  display: block;
+  padding: 10px 20px;
+  border: 1px solid #003150;
+  border-radius: 5px;
+}
+
+.search-active .close-btn {
+  display: block;
+}
+
+.search-active .search-button i {
+  display: none;
 }
 
 .secondary-list-for-mobile {

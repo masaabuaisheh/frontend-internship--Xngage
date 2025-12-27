@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style/main.css" />
+    <link rel="stylesheet" href="../../assets/fontawesome/css/all.min.css" />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"
+      defer
+    ></script>
+    <script type="module" src="../../scripts/components/allNews.js"></script>
+    <title>MyStore Demo</title>
+  </head>
+  <body>
+    <!-- Header section -->
+    <header>
+      <!-- Announcement Bar section -->
+      <div class="announcement-bar">
+        <div class="container">
+          <p>
+            Cleaver-Brooks ClearFire&reg;-CS Condensing Boiler Named Most
+            Valuable Product of the Year by Industry Professionals.
+
+            <a href="javascript:void(0);" class="announcement-link"
+              >Learn More &rarr;</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="secondary-list">
+        <div role="navigation" class="container">
+          <ul>
+            <li>
+              <a href="javascript:void(0);" class="find-rep">
+                <i class="fa-solid fa-user"></i>
+                Find a Rep</a
+              >
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="parts-store">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Parts Store</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Nav bar -->
+      <div class="content">
+        <div class="container">
+          <input type="checkbox" id="menu-toggle" hidden />
+          <label for="menu-toggle" class="menu-button">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+
+          <!-- Logo -->
+          <div class="logo">
+            <a href="../../index.html">
+              <img src="../../assets/svgs/logo.svg" alt="header logo" />
+            </a>
+          </div>
+
+          <!-- Main menu -->
+          <nav class="main-menu">
+            <div class="colse-menu">
+              <label for="menu-toggle" class="close-button">
+                <i class="fa-solid fa-x"></i>
+              </label>
+            </div>
+
+            <ul>
+              <li><a href="javascript:void(0);">solutions</a></li>
+              <li><a href="javascript:void(0);">products</a></li>
+              <li><a href="javascript:void(0);">rentals</a></li>
+              <li><a href="javascript:void(0);">industries</a></li>
+              <li><a href="javascript:void(0);">education & training</a></li>
+              <li><a href="javascript:void(0);">company info</a></li>
+            </ul>
+
+            <div class="secondary-list-for-mobile">
+              <ul>
+                <li>
+                  <a href="javascript:void(0);" class="find-rep">
+                    <i class="fa-solid fa-user"></i>
+                    Find a Rep</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0);" class="parts-store">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Parts Store</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="search-button">
+            <button class="search-submit" type="button">Search</button>
+            <button class="search-btn" type="button">Search</button>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="container recent-news">
+          <div class="recent-news-header">
+            <h2>All News</h2>
+          </div>
+          <div id="all-news-cards"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

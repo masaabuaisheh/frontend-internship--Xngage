@@ -26,6 +26,7 @@
   overflow: hidden;
   position: relative;
   height: auto;
+  gap: 20px;
 }
 
 .viewed-product {

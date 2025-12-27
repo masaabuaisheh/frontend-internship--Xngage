@@ -233,6 +233,35 @@ textarea {
   background-color: #218838;
 }
 
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+  display: none;
+}
+
+.popup {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 100%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.title {
+  margin-top: 0;
+  color: var(--primary-color);
+  text-align: center;
+}
+
 @media screen and (max-width: 1024px) {
   .footer {
     display: flex;
