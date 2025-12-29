@@ -7,8 +7,6 @@ export class Modal {
   constructor() {
     this._title = "";
     this._body = "";
-    this._overlay = "";
-    this._popup = "";
   }
 
   hide() {
