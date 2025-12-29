@@ -10,7 +10,8 @@ export function viewedProductsList() {
         product.images ||
         "../../assets/image/recentnews.jpg";
 
-      const productLink = `/views/pages/product-details.html?id=${product.id}`;
+      // const productLink = `../../views/pages/product-details.html?id=${product.id}`;
+      const productLink = `/frontend-internship--Xngage/views/pages/product-details.html?id=${product.id}`;
 
       viewedProducts.innerHTML += `
         <div class="viewed-product swiper-slide">
