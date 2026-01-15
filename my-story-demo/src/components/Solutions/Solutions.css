@@ -1,0 +1,231 @@
+.sol-section {
+  padding-top: 100px;
+}
+
+.sol-title {
+  text-align: center;
+  font-weight: 700;
+  color: var(--text-color, #1f1f1f);
+  font-size: 28px;
+}
+
+.solution-item {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sol-item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 100px;
+  /* min-width: 510px; */
+  flex: 0.6;
+}
+
+.sol-item-image {
+  flex: 1;
+  aspect-ratio: 307/172;
+}
+
+p.sec-label {
+  color: var(--supplementary-text-color, #afafaf);
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 20px;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+
+.sec-label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background-color: #afafaf;
+}
+
+.sec-label:hover::after {
+  animation: shrink-grow 0.6s ease-out forwards;
+}
+
+@keyframes shrink-grow {
+  0% {
+    width: 25px;
+  }
+  40% {
+    width: 0;
+  }
+  60% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.sol-item-content h3,
+.sol-item-content-reverse h3 {
+  padding-top: 20px;
+  color: var(--text-color, #1f1f1f);
+  font-size: clamp(20px, 3vw, 28px);
+}
+
+.sol-item-content p:not(.sec-label),
+.sol-item-content-reverse p:not(.sec-label) {
+  padding-top: 20px;
+  color: var(--text-color, #1f1f1f);
+  letter-spacing: 0.6px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.cta {
+  padding-top: 30px;
+  text-decoration: none;
+  color: var(--primary-color, #003150);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.sol-item-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  aspect-ratio: 307/172;
+}
+
+.solution-item-reverse {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.sol-item-content-reverse {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+  /* width: 510px; */
+  flex: 0.6;
+}
+
+.last-image {
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  /* Header style for mobile */
+  .container {
+    padding-inline: 24px;
+  }
+
+  .sol-section {
+    /* Top shadow + bottom shadow */
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2), 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .solution-item,
+  .solution-item-reverse {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .sol-item-content,
+  .sol-item-content-reverse {
+    padding: 0;
+    text-align: left;
+  }
+
+  .sol-item-content h3,
+  .sol-item-content-reverse h3 {
+    font-size: 22px;
+  }
+
+  .cta {
+    padding-top: 10px;
+    font-size: 14px;
+  }
+
+  .sol-item-content p,
+  .sol-item-content-reverse p {
+    --max-lines: 2;
+    display: -webkit-box; /* layout for text-clamping */
+    overflow: hidden;
+    -webkit-box-orient: vertical; /* box layout from top to bottom */
+    -webkit-line-clamp: var(
+      --max-lines
+    ); /* show max-lines then cut the rest (add ...)*/
+    line-clamp: 2;
+  }
+}
+
+/* Header style for tablet */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .container {
+    padding-inline: 24px;
+  }
+
+  .solution-item,
+  .solution-item-reverse {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .sol-item-content h3,
+  .sol-item-content-reverse h3 {
+    font-size: 30px;
+  }
+
+  .sol-item-content,
+  .sol-item-content-reverse {
+    padding: 0;
+    text-align: left;
+  }
+
+  .cta {
+    padding-top: 10px;
+    font-size: 12px;
+  }
+
+  .sol-item-content p,
+  .sol-item-content-reverse p {
+    --max-lines: 2;
+    display: -webkit-box; /* layout for text-clamping */
+    overflow: hidden;
+    -webkit-box-orient: vertical; /* box layout from top to bottom */
+    -webkit-line-clamp: var(
+      --max-lines
+    ); /* show max-lines then cut the rest (add ...)*/
+    line-clamp: 2;
+  }
+}
+
+/* Tablet / Small Laptop — 769px to 1200px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    padding-inline: 32px;
+  }
+
+  .cta {
+    padding-top: 10px;
+  }
+
+  .sol-item-content p,
+  .sol-item-content-reverse p {
+    --max-lines: 2;
+    display: -webkit-box; /* layout for text-clamping */
+    overflow: hidden;
+    -webkit-box-orient: vertical; /* box layout from top to bottom */
+    -webkit-line-clamp: var(
+      --max-lines
+    ); /* show max-lines then cut the rest (add ...)*/
+    line-clamp: 2;
+  }
+}
