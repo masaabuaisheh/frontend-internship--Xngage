@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 400; /* regular */
+}
+
 /* website container */
 .container {
   max-width: 1320px; /* stop container from getting too wide */
@@ -17,9 +22,3 @@
 .container-fluid {
   width: 100%;
 }
-
-body {
-  font-family: "Helvetica Neue", sans-serif;
-  font-weight: 400; /* regular */
-}
-

@@ -12,16 +12,16 @@ export default function RecentNews() {
         </div>
         <div className="news-cards swiper">
           <div className="swiper-wrapper" id="recent-news-wrapper">
-            {/* dynamic  */}im
+            {/* dynamic  */}
             <RecentNewsList />
           </div>
         </div>
         <div className="slider">
           <a className="prev swiper-button-prev">
-            <i className="fa-solid fa-arrow-left"></i>
+            {/* <i className="fa-solid fa-arrow-left"></i> */}
           </a>
           <a className="next swiper-button-next">
-            <i className="fa-solid fa-arrow-right"></i>
+            {/* <i className="fa-solid fa-arrow-right"></i> */}
           </a>
         </div>
       </div>

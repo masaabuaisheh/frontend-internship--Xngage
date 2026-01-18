@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import defaultImage from "../../assets/images/recentnews.jpg";
-// import { fetchProduct } from "../../services/fetchProduct";
+import { fetchProduct } from "../../services/fetchProducts";
 import Header from "../../layouts/Header/Header";
 
 export default function ProductDetail() {
@@ -11,7 +11,7 @@ export default function ProductDetail() {
 
   console.log(id);
   useEffect(() => {
-    fetch(`https://dummyjson.com/products/${id}`)
+    fetchProduct(id)
       .then((response) => response.json())
       .then((product) => {
         console.log(product);

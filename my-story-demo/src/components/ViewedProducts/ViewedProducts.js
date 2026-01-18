@@ -14,10 +14,10 @@ export default function ViewedProducts() {
         </div>
         <div className="slider">
           <a className="pro-prev swiper-button-prev">
-            <i className="fa-solid fa-arrow-left"></i>
+            {/* <i className="fa-solid fa-arrow-left"></i> */}
           </a>
           <a className="pro-next swiper-button-next">
-            <i className="fa-solid fa-arrow-right"></i>
+            {/* <i className="fa-solid fa-arrow-right"></i> */}
           </a>
         </div>
       </div>

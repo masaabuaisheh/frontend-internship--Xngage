@@ -7,5 +7,5 @@ export default function fetchProducts() {
 }
 
 export function fetchProduct(id) {
-  return Get({ productsApi } / id);
+  return Get(`${productsApi}/${id}`);
 }
